@@ -134,3 +134,12 @@ Relativistic quantum chemical methods can be broadly classified into four-compon
 Relativistic computational chemistry is essential for studying the electronic structure, spectroscopy, and chemical reactivity of heavy element compounds. It plays a crucial role in understanding and predicting the properties of materials containing heavy elements and in advancing our fundamental understanding of relativistic effects in chemistry.
 
 In summary, relativistic effects are indispensable for understanding the chemistry of heavy elements. They modify atomic orbitals, influence chemical bonding, and lead to unique properties observed in heavy element compounds. Relativistic quantum chemistry provides the theoretical and computational tools to accurately describe these effects and explore the fascinating chemistry of the heavier part of the periodic table. This chapter has provided an overview of relativistic effects and their implications, setting the stage for further advanced studies in this area.
+
+## Exercises
+
+[Exercises(.md)](exercises/ch08_exercises.md)
+[Exercises(.ipynb)](exercises/ch08_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)

@@ -1,5 +1,6 @@
 [前の章へ](01_Basics_of_Relativity.md) | [次の章へ](03_Particle_Physics_and_Atomic_Structure.md)
 
+
 # Quantum Mechanics Primer
 
 This chapter will provide a primer on quantum mechanics, laying the groundwork for understanding relativistic quantum chemistry. We will cover the fundamental concepts necessary to grasp the quantum phenomena that are crucial in the later chapters.
@@ -990,17 +991,11 @@ This chapter has provided a concise introduction to the fundamental principles o
 
 These concepts are essential for understanding the behavior of atoms and molecules, especially when relativistic effects become important. In the subsequent chapters, we will delve into relativistic quantum mechanics and its applications in chemistry, building upon the foundation laid in this chapter.
 
----
-
-[前の章へ](01_Basics_of_Relativity.md) | [次の章へ](03_Particle_Physics_and_Atomic_Structure.md)
-
----
 
 # Quantum Mechanics Primer
 
 This chapter will provide a primer on quantum mechanics, laying the groundwork for understanding relativistic quantum chemistry. We will cover the fundamental concepts necessary to grasp the quantum phenomena that are crucial in the later chapters.
 
-[前の章へ](01_Basics_of_Relativity.md) | [次の章へ](03_Particle_Physics_and_Atomic_Structure.md)
 
 ## 2.1 Wave-Particle Duality
 
@@ -1408,3 +1403,12 @@ $$
 where $H_n(x)$ are the Hermite polynomials.
 
 The quantum harmonic oscillator illustrates key quantum mechanical concepts such as energy quantization and zero-point energy, and it serves as a crucial building block for understanding more complex quantum systems.
+
+## Exercises
+
+[Exercises(.md)](exercises/ch02_exercises.md)
+[Exercises(.ipynb)](exercises/ch02_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)

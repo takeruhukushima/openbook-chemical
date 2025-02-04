@@ -46,3 +46,12 @@ Relativistic chemistry is a dynamic and evolving field with many open questions 
 Relativistic chemistry has transformed our understanding of the periodic table and chemical bonding, particularly for heavy elements. It highlights the importance of incorporating Einstein's theory of relativity into quantum mechanics to accurately describe the behavior of electrons in heavy atoms and molecules. As we move towards exploring the chemistry of even heavier elements and delve deeper into complex chemical systems, relativistic chemistry will continue to be an indispensable tool and a vibrant field of research. The future promises exciting discoveries and applications that will further enrich our understanding of the chemical world from a relativistic perspective.
 
 This textbook has aimed to provide a comprehensive introduction to relativistic chemistry, covering the fundamental principles, key concepts, and diverse applications. It is hoped that this exploration has inspired readers to appreciate the beauty and significance of relativistic effects in chemistry and to contribute to the ongoing advancements in this fascinating field.
+
+## Exercises
+
+[Exercises(.md)](exercises/ch10_exercises.md)
+[Exercises(.ipynb)](exercises/ch10_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)

@@ -136,3 +136,12 @@ Thermodynamic principles guide the design and processing of materials with desir
 - **Polymer Science**: Thermodynamics governs polymer solubility, phase separation, and thermal transitions in polymers.
 
 In summary, advanced thermodynamics provides powerful tools for understanding and predicting the behavior of complex chemical systems. Statistical thermodynamics connects microscopic and macroscopic properties, non-equilibrium thermodynamics describes transport phenomena, and thermodynamics in kinetics and materials science provides frameworks for studying reaction rates, phase equilibria, and material properties. This chapter has highlighted some of the advanced applications of thermodynamics in chemistry, demonstrating its central role in modern chemical science and engineering.
+
+## Exercises
+
+[Exercises(.md)](exercises/ch09_exercises.md)
+[Exercises(.ipynb)](exercises/ch09_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)

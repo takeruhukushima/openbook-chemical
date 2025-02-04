@@ -1,4 +1,11 @@
+<a href="02_Quantum_Mechanics_Primer.md">前の章: 02 Quantum Mechanics Primer</a> | <a href="04_Thermodynamics_Foundations.md">次の章: 04 Thermodynamics Foundations</a>
+
+---
 [前の章へ](02_Quantum_Mechanics_Primer.md) | [次の章へ](04_Thermodynamics_Foundations.md)
+
+---
+
+
 
 # Particle Physics and Atomic Structure
 
@@ -1148,13 +1155,6 @@ Relativistic effects are crucial for accurately describing the electronic struct
 
 In summary, understanding particle physics and atomic structure, including relativistic effects, is essential for a comprehensive grasp of chemistry, especially when dealing with heavier elements and relativistic quantum chemistry. This chapter provides the necessary foundation for exploring these advanced topics in subsequent chapters.
 
-<a href="02_Quantum_Mechanics_Primer.md">前の章: 02 Quantum Mechanics Primer</a> | <a href="04_Thermodynamics_Foundations.md">次の章: 04 Thermodynamics Foundations</a>
-
----
-[前の章へ](02_Quantum_Mechanics_Primer.md) | [次の章へ](04_Thermodynamics_Foundations.md)
-
----
-[前の章: 02 Quantum Mechanics Primer](02_Quantum_Mechanics_Primer.md) - [次の章: 04 Thermodynamics Foundations](04_Thermodynamics_Foundations.md)
 # Particle Physics and Atomic Structure
 
 This chapter transitions from the fundamentals of quantum mechanics to the realm of particle physics and atomic structure. We will explore the elementary particles that constitute matter and the forces that govern their interactions. Understanding these concepts is crucial for delving into relativistic quantum chemistry, as relativistic effects become significant in heavier atoms and molecules due to the involvement of core electrons and their interactions with the nucleus.
@@ -1477,13 +1477,7 @@ Relativistic effects are crucial for accurately describing the electronic struct
 
 In summary, understanding particle physics and atomic structure, including relativistic effects, is essential for a comprehensive grasp of chemistry, especially when dealing with heavier elements and relativistic quantum chemistry. This chapter provides the necessary foundation for exploring these advanced topics in subsequent chapters.
 
-<a href="02_Quantum_Mechanics_Primer.md">前の章: 02 Quantum Mechanics Primer</a> | <a href="04_Thermodynamics_Foundations.md">次の章: 04 Thermodynamics Foundations</a>
 
----
-[前の章へ](02_Quantum_Mechanics_Primer.md) | [次の章へ](04_Thermodynamics_Foundations.md)
-
----
-[Previous Chapter](02_Quantum_Mechanics_Primer.md) - [Next Chapter](04_Thermodynamics_Foundations.md)
 # Particle Physics and Atomic Structure
 
 This chapter transitions from the fundamentals of quantum mechanics to the realm of particle physics and atomic structure. We will explore the elementary particles that constitute matter and the forces that govern their interactions. Understanding these concepts is crucial for delving into relativistic quantum chemistry, as relativistic effects become significant in heavier atoms and molecules due to the involvement of core electrons and their interactions with the nucleus.
@@ -1801,3 +1795,12 @@ Relativistic effects are crucial for accurately describing the electronic struct
 In summary, understanding particle physics and atomic structure, including relativistic effects, is essential for a comprehensive grasp of chemistry, especially when dealing with heavier elements and relativistic quantum chemistry. This chapter provides the necessary foundation for exploring these advanced topics in subsequent chapters.
 
 [Previous Chapter](02_Quantum_Mechanics_Primer.md) - [Next Chapter](04_Thermodynamics_Foundations.md)
+
+## Exercises
+
+[Exercises(.md)](exercises/ch03_exercises.md)
+[Exercises(.ipynb)](exercises/ch03_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)

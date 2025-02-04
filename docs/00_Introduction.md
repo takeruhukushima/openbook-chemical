@@ -45,4 +45,8 @@
 [日付]
 
 ---
-[Next Chapter: 01 Basics of Relativity](01_Basics_of_Relativity.md)
+
+
+## References
+
+[References](references/reference_list.md)

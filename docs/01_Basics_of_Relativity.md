@@ -1,5 +1,6 @@
 [前の章へ](00_Introduction.md) | [次の章へ](02_Quantum_Mechanics_Primer.md)
 
+
 # Basics of Relativity
 
 Welcome to the chapter on the basics of relativity! In this section, we will embark on an exciting journey to understand one of the most revolutionary theories in physics – Einstein's theory of relativity. Designed for middle school students, we'll explore these complex ideas in a way that's easy to grasp and truly fascinating.
@@ -113,3 +114,14 @@ Relativity isn't just something scientists talk about in labs. It has real-world
 
 **Let's Begin!**
 In this chapter, we'll use stories, examples, and simple analogies to make these mind-bending concepts clear and engaging. We'll avoid heavy math and focus on building a strong intuitive understanding of relativity. Get ready to see the world in a new, relative way!
+
+## Exercises
+
+[Exercises(.md)](exercises/ch01_exercises.md)
+[Exercises(.ipynb)](exercises/ch01_exercises.ipynb)
+
+
+## References
+
+[References](references/reference_list.md)
+

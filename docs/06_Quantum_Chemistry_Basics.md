@@ -172,3 +172,12 @@ Several software packages are available for computational quantum chemistry, suc
 Computational quantum chemistry plays a crucial role in modern chemical research, enabling the study of complex molecules and chemical processes that are difficult to investigate experimentally. It provides valuable insights into molecular properties, reaction mechanisms, and materials design.
 
 In summary, quantum chemistry provides the theoretical foundation and computational tools for understanding the electronic structure and properties of atoms and molecules. It is essential for explaining chemical bonding, molecular spectroscopy, chemical reactivity, and many other aspects of chemistry. This chapter has introduced the basic principles and methods of quantum chemistry, setting the stage for more advanced topics in subsequent chapters.
+
+## Exercises
+
+[Exercises(.md)](exercises/ch06_exercises.md)
+[Exercises(.ipynb)](exercises/ch06_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)

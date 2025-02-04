@@ -127,3 +127,12 @@ Accurate modeling of chemical bonding in systems containing heavy elements requi
 These computational tools are crucial for understanding and predicting the bonding, structure, and properties of molecules and materials containing heavy elements.
 
 In summary, relativistic effects are integral to understanding chemical bonding involving heavy elements. They modify bond properties, influence molecular geometries, and are responsible for many unique chemical phenomena. This chapter provides a foundation for further exploration into relativistic quantum chemistry and its applications in advanced chemical systems.
+
+## Exercises
+
+[Exercises(.md)](exercises/ch05_exercises.md)
+[Exercises(.ipynb)](exercises/ch05_exercises.ipynb)
+
+## References
+
+[References](references/reference_list.md)
