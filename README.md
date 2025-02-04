@@ -1,3 +1,6 @@
+# はじめに
+かなり遊びで作った教科書です。内容も構造もあまり精査していませんので悪しからず。
+
 # Chemistry-Relativity-QM-Book
 
 This is an open-source textbook project for chemistry based on relativity theory, quantum mechanics, particle physics, and thermodynamics.
