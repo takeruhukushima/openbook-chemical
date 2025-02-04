@@ -1,0 +1,283 @@
+<h1 id="quantum-chemistry-basics">Quantum Chemistry Basics</h1>
+<p>This chapter introduces the fundamental principles and methods of
+quantum chemistry. Building upon the foundations of quantum mechanics,
+atomic structure, and chemical bonding, we will explore how quantum
+mechanics is applied to describe molecules and chemical reactions. This
+chapter will cover essential approximations and computational techniques
+used to solve the molecular Schrödinger equation, forming the basis for
+understanding more advanced relativistic quantum chemistry methods
+discussed in later chapters.</p>
+<h2 id="introduction-to-quantum-chemistry">6.1 Introduction to Quantum
+Chemistry</h2>
+<p>Quantum chemistry is the branch of chemistry that applies quantum
+mechanics to chemical systems. It aims to understand and predict
+molecular properties, chemical reactions, and spectroscopic phenomena
+from first principles, using the laws of quantum mechanics.</p>
+<h3 id="the-molecular-schrödinger-equation">6.1.1 The Molecular
+Schrödinger Equation</h3>
+<p>The central equation in quantum chemistry is the molecular
+Schrödinger equation, which describes the behavior of electrons and
+nuclei in molecules:</p>
+<p><span
+class="math display"><em>Ĥ</em><em>Ψ</em>(<strong>r</strong>, <strong>R</strong>) = <em>E</em><em>Ψ</em>(<strong>r</strong>, <strong>R</strong>)</span></p>
+<p>where: - <span class="math inline"><em>Ĥ</em></span> is the molecular
+Hamiltonian operator. - <span
+class="math inline"><em>Ψ</em>(<strong>r</strong>, <strong>R</strong>)</span>
+is the molecular wavefunction, depending on electron coordinates <span
+class="math inline"><strong>r</strong></span> and nuclear coordinates
+<span class="math inline"><strong>R</strong></span>. - <span
+class="math inline"><em>E</em></span> is the total energy of the
+molecule.</p>
+<p>The molecular Hamiltonian <span class="math inline"><em>Ĥ</em></span>
+includes terms for: - Kinetic energy of electrons and nuclei. -
+Potential energy of electron-nucleus attraction. - Potential energy of
+electron-electron repulsion. - Potential energy of nucleus-nucleus
+repulsion.</p>
+<h3 id="born-oppenheimer-approximation">6.1.2 Born-Oppenheimer
+Approximation</h3>
+<p>Solving the molecular Schrödinger equation exactly is extremely
+challenging for polyatomic molecules. The Born-Oppenheimer approximation
+simplifies the problem by separating nuclear and electronic motion. Due
+to the large mass difference between nuclei and electrons, we assume
+that nuclei are stationary relative to the much faster-moving
+electrons.</p>
+<p>Under the Born-Oppenheimer approximation, the molecular wavefunction
+is separated into electronic and nuclear wavefunctions:</p>
+<p><span
+class="math display"><em>Ψ</em>(<strong>r</strong>, <strong>R</strong>) ≈ <em>ψ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub>(<strong>r</strong>; <strong>R</strong>) × <em>χ</em><sub><em>n</em><em>u</em><em>c</em></sub>(<strong>R</strong>)</span></p>
+<p>The electronic Schrödinger equation is solved for fixed nuclear
+positions <span class="math inline"><strong>R</strong></span>:</p>
+<p><span
+class="math display"><em>Ĥ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub><em>ψ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub>(<strong>r</strong>; <strong>R</strong>) = <em>E</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub>(<strong>R</strong>)<em>ψ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub>(<strong>r</strong>; <strong>R</strong>)</span></p>
+<p>The electronic Hamiltonian <span
+class="math inline"><em>Ĥ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub></span>
+includes kinetic energy of electrons and all potential energy terms,
+while treating nuclear positions as parameters. The eigenvalue <span
+class="math inline"><em>E</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub>(<strong>R</strong>)</span>
+is the electronic energy, which depends on nuclear positions and serves
+as the potential energy for nuclear motion.</p>
+<h2 id="electronic-structure-methods">6.2 Electronic Structure
+Methods</h2>
+<p>Solving the electronic Schrödinger equation is still complex and
+requires further approximations. Various electronic structure methods
+have been developed, broadly categorized into:</p>
+<h3 id="hartree-fock-hf-theory">6.2.1 Hartree-Fock (HF) Theory</h3>
+<p>Hartree-Fock (HF) theory is a foundational method in quantum
+chemistry that approximates the many-electron wavefunction by a single
+Slater determinant of spin-orbitals. It treats electron-electron
+interactions in an average way, neglecting instantaneous electron
+correlation.</p>
+<h4 id="key-approximations-in-hf-theory">Key Approximations in HF
+Theory:</h4>
+<ul>
+<li><strong>Independent Electron Approximation</strong>: Each electron
+moves in an effective potential created by the average field of all
+other electrons and nuclei.</li>
+<li><strong>Variational Principle</strong>: The HF energy is an upper
+bound to the exact ground state energy.</li>
+<li><strong>Self-Consistent Field (SCF) Procedure</strong>: The HF
+equations are solved iteratively until the electron density and energy
+converge.</li>
+</ul>
+<h4 id="limitations-of-hf-theory">Limitations of HF Theory:</h4>
+<ul>
+<li><strong>Neglect of Electron Correlation</strong>: HF theory does not
+account for the instantaneous correlation between electron motions,
+leading to overestimation of energies and inaccurate descriptions of
+certain molecular properties.</li>
+<li><strong>Basis Set Dependence</strong>: Accuracy depends on the
+choice of atomic basis sets used to represent molecular orbitals.</li>
+</ul>
+<h3 id="post-hartree-fock-methods">6.2.2 Post-Hartree-Fock Methods</h3>
+<p>Post-Hartree-Fock methods aim to improve upon HF theory by including
+electron correlation effects. These methods are generally more
+computationally demanding than HF.</p>
+<h4 id="examples-of-post-hf-methods">Examples of Post-HF Methods:</h4>
+<ul>
+<li><strong>Møller-Plesset Perturbation Theory (MPn)</strong>: Treats
+electron correlation as a perturbation to the HF wavefunction. MP2
+(second-order MP theory) is a common and relatively cost-effective
+method.</li>
+<li><strong>Configuration Interaction (CI)</strong>: Expands the
+wavefunction as a linear combination of Slater determinants representing
+different electronic configurations. Full CI is exact within a given
+basis set but computationally very expensive. Truncated CI methods like
+CISD (CI with singles and doubles) are more practical.</li>
+<li><strong>Coupled Cluster (CC) Theory</strong>: Provides a highly
+accurate description of electron correlation by exponentiating cluster
+operators. CCSD (CC with singles and doubles) and CCSD(T) (CCSD with
+perturbative triples) are widely used high-accuracy methods.</li>
+<li><strong>Multi-Configurational Self-Consistent Field
+(MCSCF)</strong>: Optimizes both molecular orbitals and configuration
+coefficients simultaneously, important for describing molecules with
+multireference character (e.g., bond breaking, excited states).</li>
+</ul>
+<h3 id="density-functional-theory-dft">6.2.3 Density Functional Theory
+(DFT)</h3>
+<p>Density Functional Theory (DFT) is a widely used electronic structure
+method that, in principle, exactly accounts for electron correlation at
+a lower computational cost than many post-HF methods. DFT is based on
+the Hohenberg-Kohn theorems, which state that the ground state
+electronic energy and all other ground state properties are uniquely
+determined by the electron density <span
+class="math inline"><em>ρ</em>(<strong>r</strong>)</span>.</p>
+<h4 id="key-concepts-in-dft">Key Concepts in DFT:</h4>
+<ul>
+<li><strong>Electron Density as Basic Variable</strong>: DFT focuses on
+the electron density <span
+class="math inline"><em>ρ</em>(<strong>r</strong>)</span> instead of the
+many-electron wavefunction.</li>
+<li><strong>Kohn-Sham Equations</strong>: A set of effective
+single-particle equations that yield the exact electron density of the
+interacting system.</li>
+<li><strong>Exchange-Correlation Functional</strong>: The central
+unknown in DFT is the exchange-correlation functional <span
+class="math inline"><em>E</em><sub><em>x</em><em>c</em></sub>[<em>ρ</em>]</span>,
+which accounts for exchange and correlation effects. Approximations to
+<span
+class="math inline"><em>E</em><sub><em>x</em><em>c</em></sub>[<em>ρ</em>]</span>
+are crucial for the accuracy of DFT calculations.</li>
+</ul>
+<h4
+id="common-approximations-for-exchange-correlation-functionals">Common
+Approximations for Exchange-Correlation Functionals:</h4>
+<ul>
+<li><strong>Local Density Approximation (LDA)</strong>: Approximates
+<span
+class="math inline"><em>E</em><sub><em>x</em><em>c</em></sub>[<em>ρ</em>]</span>
+locally based on the uniform electron gas.</li>
+<li><strong>Generalized Gradient Approximation (GGA)</strong>: Includes
+gradients of the density in <span
+class="math inline"><em>E</em><sub><em>x</em><em>c</em></sub>[<em>ρ</em>]</span>,
+improving upon LDA. Common GGAs include BLYP and PBE.</li>
+<li><strong>Hybrid Functionals</strong>: Mixes HF exchange with DFT
+exchange and correlation, such as B3LYP and PBE0, often providing better
+accuracy for thermochemistry and kinetics.</li>
+<li><strong>Meta-GGA Functionals</strong>: Include second derivatives of
+the density or kinetic energy density, further improving accuracy.</li>
+<li><strong>Range-Separated Functionals</strong>: Separates exchange
+interaction into short-range and long-range parts, useful for systems
+with charge-transfer or long-range interactions.</li>
+</ul>
+<h4 id="advantages-of-dft">Advantages of DFT:</h4>
+<ul>
+<li><strong>Computational Efficiency</strong>: DFT is generally less
+computationally demanding than post-HF methods, allowing for
+calculations on larger molecules.</li>
+<li><strong>Inclusion of Electron Correlation</strong>: DFT, in
+principle, includes electron correlation, often providing better
+accuracy than HF theory.</li>
+</ul>
+<h4 id="limitations-of-dft">Limitations of DFT:</h4>
+<ul>
+<li><strong>Approximation of Exchange-Correlation Functional</strong>:
+The exact form of <span
+class="math inline"><em>E</em><sub><em>x</em><em>c</em></sub>[<em>ρ</em>]</span>
+is unknown, and the accuracy of DFT calculations depends on the quality
+of the approximate functional used.</li>
+<li><strong>Challenges with Dispersion Interactions and Strong
+Correlation</strong>: Standard DFT functionals may struggle with van der
+Waals dispersion interactions and strongly correlated systems.</li>
+</ul>
+<h2 id="basis-sets">6.3 Basis Sets</h2>
+<p>In quantum chemical calculations, molecular orbitals are typically
+expanded as linear combinations of atomic basis functions. The choice of
+basis set affects the accuracy and computational cost of
+calculations.</p>
+<h3 id="types-of-basis-sets">6.3.1 Types of Basis Sets</h3>
+<ul>
+<li><strong>Slater-Type Orbitals (STOs)</strong>: Functions that
+resemble atomic orbitals and have the correct exponential decay. STO-3G
+is a minimal basis set using Gaussian approximations to STOs.</li>
+<li><strong>Gaussian-Type Orbitals (GTOs)</strong>: Gaussian functions
+are computationally more efficient than STOs for evaluating integrals.
+Basis sets are typically constructed from contracted Gaussian functions
+(CGFs), which are linear combinations of primitive Gaussians.</li>
+</ul>
+<h3 id="common-basis-set-families">6.3.2 Common Basis Set Families</h3>
+<ul>
+<li><strong>Pople-style basis sets</strong>: e.g., 6-31G, 6-31G(d),
+6-31+G(d,p). Split-valence basis sets (e.g., 6-31G) describe core and
+valence electrons with different numbers of basis functions.
+Polarization functions (e.g., (d), (d,p)) add functions with higher
+angular momentum to allow for better description of molecular bonding.
+Diffuse functions (e.g., +) are important for anions and Rydberg
+states.</li>
+<li><strong>Correlation-Consistent basis sets (cc-pVnZ)</strong>:
+Designed for correlation calculations and systematically converge to the
+complete basis set limit as n increases (cc-pVDZ, cc-pVTZ, cc-pVQZ,
+etc.). Augmented versions (aug-cc-pVnZ) include diffuse functions.</li>
+<li><strong>Polarization-Consistent basis sets (pc-n)</strong>:
+Optimized for DFT calculations and provide systematic convergence for
+DFT energies and properties.</li>
+</ul>
+<h3 id="basis-set-superposition-error-bsse">6.3.3 Basis Set
+Superposition Error (BSSE)</h3>
+<p>When using finite basis sets, especially for intermolecular
+interactions, Basis Set Superposition Error (BSSE) can arise. BSSE is an
+artifact that artificially lowers the energy of interacting systems due
+to basis functions from one molecule “borrowing” basis functions from
+another molecule to improve its description. BSSE can be corrected using
+methods like the Counterpoise Correction.</p>
+<h2 id="molecular-properties">6.4 Molecular Properties</h2>
+<p>Quantum chemistry methods can be used to calculate a wide range of
+molecular properties beyond energies and structures:</p>
+<h3 id="electronic-properties">6.4.1 Electronic Properties</h3>
+<ul>
+<li><strong>Dipole Moments, Multipole Moments</strong>: Describe the
+charge distribution in a molecule.</li>
+<li><strong>Polarizability</strong>: Measures the response of a molecule
+to an electric field.</li>
+<li><strong>Electron Density, Molecular Electrostatic Potential
+(MEP)</strong>: Visualize charge distribution and reactive sites in
+molecules.</li>
+<li><strong>Ionization Potentials, Electron Affinities</strong>:
+Energies related to removing or adding electrons.</li>
+</ul>
+<h3 id="spectroscopic-properties">6.4.2 Spectroscopic Properties</h3>
+<ul>
+<li><strong>Vibrational Frequencies, IR and Raman Spectra</strong>:
+Calculated from the Hessian matrix (second derivatives of energy with
+respect to nuclear coordinates).</li>
+<li><strong>Electronic Excitation Energies, UV-Vis Spectra</strong>:
+Calculated using time-dependent DFT (TD-DFT) or excited-state methods
+like CIS, EOM-CCSD.</li>
+<li><strong>NMR Chemical Shifts, EPR g-tensors</strong>: Magnetic
+resonance parameters sensitive to electronic and molecular
+structure.</li>
+</ul>
+<h3 id="thermochemical-properties">6.4.3 Thermochemical Properties</h3>
+<ul>
+<li><strong>Enthalpies of Formation, Reaction Energies</strong>:
+Calculated using total energies and vibrational frequencies.</li>
+<li><strong>Entropy, Gibbs Free Energy</strong>: Statistical
+thermodynamics combined with quantum chemical calculations.</li>
+<li><strong>Reaction Rate Constants</strong>: Transition state theory
+and quantum dynamics calculations.</li>
+</ul>
+<h2 id="software-and-computational-chemistry">6.5 Software and
+Computational Chemistry</h2>
+<p>Quantum chemistry calculations are typically performed using
+specialized software packages. Popular quantum chemistry software
+includes:</p>
+<ul>
+<li><strong>Gaussian</strong>: A widely used commercial software package
+with a broad range of methods and properties.</li>
+<li><strong>ORCA</strong>: A versatile and efficient quantum chemistry
+program with a focus on advanced methods and spectroscopy.</li>
+<li><strong>NWChem</strong>: A powerful open-source software package
+with high-performance computing capabilities.</li>
+<li><strong>Psi4</strong>: An open-source software package focused on
+high-accuracy methods and extensibility.</li>
+<li><strong>Q-Chem</strong>: A commercial software package with a focus
+on fast methods and large systems.</li>
+</ul>
+<p>Computational chemistry involves using these software packages to
+solve chemical problems, design molecules, and interpret experimental
+data. It is an essential tool in modern chemical research and
+development.</p>
+<p>In summary, quantum chemistry provides the theoretical framework and
+computational tools to understand molecular structure, properties, and
+reactivity from a quantum mechanical perspective. This chapter lays the
+groundwork for exploring more advanced topics, including relativistic
+quantum chemistry, in subsequent chapters.</p>
