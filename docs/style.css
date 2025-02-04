@@ -107,3 +107,30 @@ header nav a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: 0.2s;
 }
+
+/* ---------------------
+   Chapter List in index.html
+---------------------- */
+.chapter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    margin-bottom: 0.5rem;
+}
+
+.chapter-list li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    background-color: #FFF;
+    color: #333;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+.chapter-list li a:hover {
+    background-color: #E8F0FE;
+}

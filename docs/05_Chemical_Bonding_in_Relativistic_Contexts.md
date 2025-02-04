@@ -1,3 +1,6 @@
+[前の章: 04 Thermodynamics Foundations](04_Thermodynamics_Foundations.md) - [次の章: 06 Quantum Chemistry Basics](06_Quantum_Chemistry_Basics.md)
+
+
 # Chemical Bonding in Relativistic Contexts
 
 This chapter delves into the theory of chemical bonding, focusing on how relativistic effects modify and enrich our understanding of molecular interactions. Chemical bonding is fundamental to chemistry, explaining how atoms combine to form molecules and materials. In heavier elements, relativistic effects significantly alter electronic structures, leading to unique bonding characteristics that are crucial in fields ranging from catalysis to materials science.
