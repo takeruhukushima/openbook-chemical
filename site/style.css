@@ -1,0 +1,109 @@
+/* ---------------------
+   Basic Reset
+---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------
+   Body and Typography
+---------------------- */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #F8FAFD;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 0.8em;
+}
+
+/* カード風レイアウト */
+.card {
+  background: #FFF;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+h1.title {
+  font-size: 2.2rem;
+  color: #2C3E50;
+}
+h2.subtitle {
+  font-size: 1.6rem;
+  color: #606060;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------
+   Navigation or Header
+---------------------- */
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #E8F1FF, #C4E1FF);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: auto;
+  color: #0E6BA8;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #0E6BA8;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+header nav a:hover {
+  color: #0A4C7D;
+  transition: 0.3s;
+}
+
+/* ---------------------
+   Buttons
+---------------------- */
+.button {
+  background-color: #88D18A;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #73BB76;
+  transition: 0.3s;
+}
+
+/* ---------------------
+   Highlighted Section
+---------------------- */
+.section-highlight {
+  background: linear-gradient(135deg, #FFEAF6, #FFD6EC);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+/* ---------------------
+   Card Hover Effect
+---------------------- */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}

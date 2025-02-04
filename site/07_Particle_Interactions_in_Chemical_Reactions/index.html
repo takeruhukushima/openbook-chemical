@@ -1,0 +1,1486 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../06_Quantum_Chemistry_Basics/">
+      
+      
+        <link rel="next" href="../08_Relativistic_Effects_in_Heavy_Elements/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
+    
+    
+      
+        <title>Particle Interactions in Chemical Reactions - OPENBOOK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#particle-interactions-in-chemical-reactions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPENBOOK" class="md-header__button md-logo" aria-label="OPENBOOK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPENBOOK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Particle Interactions in Chemical Reactions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPENBOOK" class="md-nav__button md-logo" aria-label="OPENBOOK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPENBOOK
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Basics_of_Relativity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics of Relativity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Quantum_Mechanics_Primer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics Primer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Particle_Physics_and_Atomic_Structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Particle Physics and Atomic Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Thermodynamics_Foundations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermodynamics Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Chemical_Bonding_in_Relativistic_Contexts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chemical Bonding in Relativistic Contexts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Quantum_Chemistry_Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantum Chemistry Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Particle Interactions in Chemical Reactions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Particle Interactions in Chemical Reactions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-basic-concepts-of-chemical-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Basic Concepts of Chemical Reactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 Basic Concepts of Chemical Reactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711-reaction-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.1 Reaction Mechanisms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712-potential-energy-surfaces-pes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.2 Potential Energy Surfaces (PES)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-types-of-particle-interactions-in-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.3 Types of Particle Interactions in Reactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-theories-of-reaction-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Theories of Reaction Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 Theories of Reaction Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721-arrhenius-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 Arrhenius Theory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722-transition-state-theory-tst" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 Transition State Theory (TST)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2.2 Transition State Theory (TST)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-assumptions-of-tst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Assumptions of TST:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tst-rate-constant-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      TST Rate Constant Expression:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723-collision-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 Collision Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2.3 Collision Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts-in-collision-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts in Collision Theory:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collision-theory-rate-constant-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collision Theory Rate Constant Expression:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-potential-energy-surfaces-and-reaction-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Potential Energy Surfaces and Reaction Dynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 Potential Energy Surfaces and Reaction Dynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731-features-of-potential-energy-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 Features of Potential Energy Surfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732-reaction-path-and-reaction-coordinate" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 Reaction Path and Reaction Coordinate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#733-dynamics-on-potential-energy-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 Dynamics on Potential Energy Surfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-catalysis-and-reaction-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Catalysis and Reaction Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 Catalysis and Reaction Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741-homogeneous-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 Homogeneous Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#742-heterogeneous-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 Heterogeneous Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#743-enzyme-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 Enzyme Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#744-relativistic-effects-in-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4 Relativistic Effects in Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-computational-chemistry-and-reaction-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Computational Chemistry and Reaction Modeling
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Relativistic_Effects_in_Heavy_Elements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relativistic Effects in Heavy Elements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Advanced_Thermodynamics_for_Chemistry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Thermodynamics for Chemistry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Summary_and_Future_Perspectives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary and Future Perspectives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/reference_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/external_links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/sample_chapters/advanced_topic_example.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Topic Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch01_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch02_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch03_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch04_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch05_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch06_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-basic-concepts-of-chemical-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Basic Concepts of Chemical Reactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 Basic Concepts of Chemical Reactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711-reaction-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.1 Reaction Mechanisms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712-potential-energy-surfaces-pes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.2 Potential Energy Surfaces (PES)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-types-of-particle-interactions-in-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1.3 Types of Particle Interactions in Reactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-theories-of-reaction-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Theories of Reaction Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 Theories of Reaction Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#721-arrhenius-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 Arrhenius Theory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#722-transition-state-theory-tst" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 Transition State Theory (TST)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2.2 Transition State Theory (TST)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-assumptions-of-tst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Assumptions of TST:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tst-rate-constant-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      TST Rate Constant Expression:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#723-collision-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 Collision Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2.3 Collision Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts-in-collision-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts in Collision Theory:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collision-theory-rate-constant-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collision Theory Rate Constant Expression:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-potential-energy-surfaces-and-reaction-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Potential Energy Surfaces and Reaction Dynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 Potential Energy Surfaces and Reaction Dynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#731-features-of-potential-energy-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 Features of Potential Energy Surfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732-reaction-path-and-reaction-coordinate" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 Reaction Path and Reaction Coordinate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#733-dynamics-on-potential-energy-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 Dynamics on Potential Energy Surfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-catalysis-and-reaction-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Catalysis and Reaction Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 Catalysis and Reaction Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741-homogeneous-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 Homogeneous Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#742-heterogeneous-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 Heterogeneous Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#743-enzyme-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 Enzyme Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#744-relativistic-effects-in-catalysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4 Relativistic Effects in Catalysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-computational-chemistry-and-reaction-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Computational Chemistry and Reaction Modeling
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="particle-interactions-in-chemical-reactions">Particle Interactions in Chemical Reactions</h1>
+<p>This chapter explores the fundamental interactions of particles during chemical reactions. Chemical reactions involve the rearrangement of atoms and molecules, driven by the interactions between electrons and nuclei. Understanding these interactions at the particle level is crucial for comprehending reaction mechanisms, kinetics, and thermodynamics. We will delve into the types of particle interactions, potential energy surfaces, and theories that describe how reactions occur.</p>
+<h2 id="71-basic-concepts-of-chemical-reactions">7.1 Basic Concepts of Chemical Reactions</h2>
+<p>Chemical reactions are processes that involve the breaking and forming of chemical bonds, leading to the transformation of reactants into products.</p>
+<h3 id="711-reaction-mechanisms">7.1.1 Reaction Mechanisms</h3>
+<p>A reaction mechanism is a step-by-step sequence of elementary reactions that describe the overall chemical transformation. Mechanisms provide insights into:
+- <strong>Elementary Steps</strong>: Individual molecular events (e.g., bond breaking, bond formation, isomerization).
+- <strong>Intermediates</strong>: Short-lived species formed and consumed during the reaction.
+- <strong>Transition States</strong>: High-energy structures representing the maximum energy point along the reaction coordinate.</p>
+<h3 id="712-potential-energy-surfaces-pes">7.1.2 Potential Energy Surfaces (PES)</h3>
+<p>The Potential Energy Surface (PES) is a central concept in understanding chemical reactions. It is a multidimensional surface that describes the potential energy of a molecular system as a function of its geometry (nuclear coordinates).</p>
+<ul>
+<li><strong>Reaction Coordinate</strong>: A path along the PES connecting reactants to products through the transition state.</li>
+<li><strong>Transition State (TS)</strong> or <strong>Saddle Point</strong>: The highest energy point along the reaction coordinate, representing the energy barrier for the reaction.</li>
+<li><strong>Activation Energy ($E_a$)</strong>: The energy difference between the reactants and the transition state, determining the rate of the reaction.</li>
+<li><strong>Reactant and Product Valleys</strong>: Regions of the PES corresponding to stable reactant and product molecules.</li>
+</ul>
+<h3 id="713-types-of-particle-interactions-in-reactions">7.1.3 Types of Particle Interactions in Reactions</h3>
+<p>Chemical reactions are driven by various types of particle interactions:</p>
+<ul>
+<li><strong>Electrostatic Interactions</strong>: Attractions and repulsions between charged particles (nuclei and electrons). These are primary forces in ionic reactions and polar covalent bond formations.</li>
+<li><strong>Exchange Interactions</strong>: Quantum mechanical interactions arising from the Pauli exclusion principle, leading to covalent bond formation and repulsion at short distances.</li>
+<li><strong>Dispersion Interactions (van der Waals forces)</strong>: Weak, short-range attractive forces between all atoms and molecules, important in intermolecular interactions and non-covalent bonding.</li>
+<li><strong>Nuclear Interactions</strong>: In typical chemical reactions, nuclear interactions are not directly involved in bond breaking or formation, but they define the nuclear framework and contribute to the overall potential energy. However, in nuclear chemistry and reactions involving isotopes, nuclear effects become significant.</li>
+</ul>
+<h2 id="72-theories-of-reaction-rates">7.2 Theories of Reaction Rates</h2>
+<p>Several theories describe the rates of chemical reactions, based on the principles of particle interactions and statistical mechanics.</p>
+<h3 id="721-arrhenius-theory">7.2.1 Arrhenius Theory</h3>
+<p>Arrhenius theory is an empirical model that relates the rate constant of a reaction to the temperature and activation energy:</p>
+<p>$$
+k = A \exp\left(-\frac{E_a}{RT}\right)
+$$</p>
+<p>where:
+- $k$ is the rate constant.
+- $A$ is the pre-exponential factor (frequency factor).
+- $E_a$ is the activation energy.
+- $R$ is the gas constant.
+- $T$ is the temperature in Kelvin.</p>
+<p>Arrhenius theory provides a simple way to understand the temperature dependence of reaction rates, but it does not explain the pre-exponential factor or the details of the reaction process at the molecular level.</p>
+<h3 id="722-transition-state-theory-tst">7.2.2 Transition State Theory (TST)</h3>
+<p>Transition State Theory (TST), also known as Activated Complex Theory, provides a more detailed picture of reaction rates by considering the transition state.</p>
+<h4 id="key-assumptions-of-tst">Key Assumptions of TST:</h4>
+<ul>
+<li><strong>Transition State Existence</strong>: A well-defined transition state exists along the reaction coordinate.</li>
+<li><strong>Quasi-Equilibrium</strong>: Reactants are in quasi-equilibrium with the transition state.</li>
+<li><strong>Unimolecular Decay of Transition State</strong>: The transition state decomposes to products in a unimolecular fashion.</li>
+</ul>
+<h4 id="tst-rate-constant-expression">TST Rate Constant Expression:</h4>
+<p>$$
+k_{TST} = \frac{k_B T}{h} \frac{Q_{TS}^{\ddagger}}{Q_R} \exp\left(-\frac{E_a}{RT}\right)
+$$</p>
+<p>where:
+- $k_B$ is the Boltzmann constant.
+- $h$ is the Planck constant.
+- $Q_{TS}^{\ddagger}$ is the partition function of the transition state (excluding the reaction coordinate).
+- $Q_R$ is the partition function of the reactants.
+- $E_a$ is the activation energy (potential energy barrier).</p>
+<p>TST provides a theoretical framework to calculate rate constants from molecular properties and partition functions, offering insights into the pre-exponential factor and the role of molecular vibrations and rotations in reaction rates.</p>
+<h3 id="723-collision-theory">7.2.3 Collision Theory</h3>
+<p>Collision Theory is another approach to reaction rates, particularly useful for gas-phase reactions. It assumes that reactions occur when reactant molecules collide with sufficient energy and proper orientation.</p>
+<h4 id="key-concepts-in-collision-theory">Key Concepts in Collision Theory:</h4>
+<ul>
+<li><strong>Collision Frequency</strong>: The number of collisions per unit time between reactant molecules.</li>
+<li><strong>Activation Energy</strong>: Minimum kinetic energy required for a collision to lead to a reaction.</li>
+<li><strong>Steric Factor (p)</strong>: A factor that accounts for the fraction of collisions with proper orientation for reaction.</li>
+</ul>
+<h4 id="collision-theory-rate-constant-expression">Collision Theory Rate Constant Expression:</h4>
+<p>$$
+k_{collision} = p Z \exp\left(-\frac{E_a}{RT}\right)
+$$</p>
+<p>where:
+- $p$ is the steric factor (0 ≤ p ≤ 1).
+- $Z$ is the collision frequency.
+- $E_a$ is the activation energy.</p>
+<p>Collision theory is conceptually simple and useful for understanding factors affecting reaction rates in the gas phase, but it often underestimates rate constants due to oversimplifications and neglect of molecular complexity.</p>
+<h2 id="73-potential-energy-surfaces-and-reaction-dynamics">7.3 Potential Energy Surfaces and Reaction Dynamics</h2>
+<p>The shape of the PES dictates the reaction pathway and dynamics. Understanding PES features is crucial for predicting reaction outcomes and controlling reaction selectivity.</p>
+<h3 id="731-features-of-potential-energy-surfaces">7.3.1 Features of Potential Energy Surfaces</h3>
+<ul>
+<li><strong>Valleys (Minima)</strong>: Represent stable reactant and product molecules.</li>
+<li><strong>Saddle Points (Transition States)</strong>: Represent energy barriers for reactions.</li>
+<li><strong>Funnels</strong>: Regions of the PES that guide trajectories towards products.</li>
+<li><strong>Plateaus and Flat Regions</strong>: Indicate regions of weak interaction or multiple possible pathways.</li>
+<li><strong>Cusps and Conical Intersections</strong>: Points where the Born-Oppenheimer approximation breaks down, important in photochemistry and non-adiabatic reactions.</li>
+</ul>
+<h3 id="732-reaction-path-and-reaction-coordinate">7.3.2 Reaction Path and Reaction Coordinate</h3>
+<p>The reaction path is the minimum energy path connecting reactants to products on the PES. The reaction coordinate is a collective variable that describes progress along this path, often involving changes in bond lengths and angles.</p>
+<h3 id="733-dynamics-on-potential-energy-surfaces">7.3.3 Dynamics on Potential Energy Surfaces</h3>
+<ul>
+<li><strong>Classical Trajectories</strong>: Classical mechanics can be used to simulate molecular motion on the PES, providing insights into reaction dynamics, energy transfer, and product distributions.</li>
+<li><strong>Quantum Dynamics</strong>: For more accurate descriptions, especially for light atoms and low temperatures, quantum dynamics methods are needed to account for quantum effects like tunneling and zero-point energy.</li>
+<li><strong>Transition State Dynamics</strong>: Studying trajectories near the transition state region can reveal details about the reaction mechanism and factors controlling reaction rates.</li>
+</ul>
+<h2 id="74-catalysis-and-reaction-rates">7.4 Catalysis and Reaction Rates</h2>
+<p>Catalysts are substances that increase the rate of a chemical reaction without being consumed in the process. Catalysts provide an alternative reaction pathway with a lower activation energy.</p>
+<h3 id="741-homogeneous-catalysis">7.4.1 Homogeneous Catalysis</h3>
+<p>Homogeneous catalysts are in the same phase as the reactants. They typically involve transition metal complexes that form intermediates with reactants, facilitating bond breaking and formation.</p>
+<h3 id="742-heterogeneous-catalysis">7.4.2 Heterogeneous Catalysis</h3>
+<p>Heterogeneous catalysts are in a different phase from the reactants (usually solids catalyzing gas or liquid phase reactions). Reactions occur on the catalyst surface, involving adsorption of reactants, surface reactions, and desorption of products.</p>
+<h3 id="743-enzyme-catalysis">7.4.3 Enzyme Catalysis</h3>
+<p>Enzymes are biological catalysts (proteins) that catalyze biochemical reactions with high specificity and efficiency. Enzymes provide active sites that bind substrates, lower activation energies, and facilitate biological transformations.</p>
+<h3 id="744-relativistic-effects-in-catalysis">7.4.4 Relativistic Effects in Catalysis</h3>
+<p>Relativistic effects can play a significant role in catalysis, especially for catalysts based on heavy elements like gold, platinum, and other transition metals. Relativistic effects can:
+- <strong>Modify Electronic Structure</strong>: Alter orbital energies and shapes, affecting catalytic activity and selectivity.
+- <strong>Influence Adsorption and Activation</strong>: Change the way reactants adsorb and activate on catalyst surfaces.
+- <strong>Enhance Catalytic Activity</strong>: In some cases, relativistic effects are essential for the catalytic activity of heavy element catalysts.</p>
+<h2 id="75-computational-chemistry-and-reaction-modeling">7.5 Computational Chemistry and Reaction Modeling</h2>
+<p>Computational chemistry plays a crucial role in studying chemical reactions, providing tools to:</p>
+<ul>
+<li><strong>Calculate Potential Energy Surfaces</strong>: Map out PESs for reactions using electronic structure methods.</li>
+<li><strong>Locate Transition States</strong>: Find transition state structures and calculate activation energies.</li>
+<li><strong>Simulate Reaction Dynamics</strong>: Perform trajectory calculations to study reaction mechanisms and product distributions.</li>
+<li><strong>Design Catalysts</strong>: Predict and design new catalysts with improved activity and selectivity.</li>
+</ul>
+<p>Methods like DFT, ab initio molecular dynamics, and transition state optimization techniques are widely used to model and understand chemical reactions at the molecular level.</p>
+<p>In summary, particle interactions are the driving forces behind chemical reactions. Understanding these interactions, along with concepts like potential energy surfaces and reaction rate theories, provides a comprehensive framework for studying and predicting chemical reactivity. Catalysis, both homogeneous and heterogeneous, offers ways to control and enhance reaction rates, with relativistic effects adding another layer of complexity and opportunity in catalyst design, particularly for heavy element systems. Computational chemistry is indispensable for modern reaction studies, enabling detailed modeling and simulation of reaction processes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f13b1293.min.js"></script>
+      
+    
+  </body>
+</html>

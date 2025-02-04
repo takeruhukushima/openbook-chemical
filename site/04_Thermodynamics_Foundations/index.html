@@ -1,0 +1,1633 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../03_Particle_Physics_and_Atomic_Structure/">
+      
+      
+        <link rel="next" href="../05_Chemical_Bonding_in_Relativistic_Contexts/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
+    
+    
+      
+        <title>Thermodynamics Foundations - OPENBOOK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#thermodynamics-foundations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPENBOOK" class="md-header__button md-logo" aria-label="OPENBOOK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPENBOOK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Thermodynamics Foundations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPENBOOK" class="md-nav__button md-logo" aria-label="OPENBOOK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPENBOOK
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Basics_of_Relativity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics of Relativity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Quantum_Mechanics_Primer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics Primer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Particle_Physics_and_Atomic_Structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Particle Physics and Atomic Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Thermodynamics Foundations
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Thermodynamics Foundations
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-basic-concepts-and-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Basic Concepts and Definitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Basic Concepts and Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-system-and-surroundings" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.1 System and Surroundings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-thermodynamic-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.2 Thermodynamic Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-state-functions-and-path-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.3 State Functions and Path Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414-equilibrium-and-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.4 Equilibrium and Processes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-the-first-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 The First Law of Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 The First Law of Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-internal-energy-u" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 Internal Energy (U)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-heat-q-and-work-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 Heat (q) and Work (w)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-mathematical-statement-of-the-first-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 Mathematical Statement of the First Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424-enthalpy-h" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.4 Enthalpy (H)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-the-second-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 The Second Law of Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 The Second Law of Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431-entropy-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.1 Entropy (S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432-change-in-entropy-delta-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.2 Change in Entropy ($\Delta S$)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-second-law-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.3 Second Law Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434-statistical-interpretation-of-entropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.4 Statistical Interpretation of Entropy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-the-third-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 The Third Law of Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 The Third Law of Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441-statement-of-the-third-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.1 Statement of the Third Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-implications-of-the-third-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.2 Implications of the Third Law
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-gibbs-free-energy-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Gibbs Free Energy (G)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 Gibbs Free Energy (G)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#451-definition-of-gibbs-free-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.1 Definition of Gibbs Free Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452-change-in-gibbs-free-energy-delta-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.2 Change in Gibbs Free Energy ($\Delta G$)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#453-spontaneity-and-equilibrium" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.3 Spontaneity and Equilibrium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#454-standard-gibbs-free-energy-of-formation-delta-g_fcirc" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.4 Standard Gibbs Free Energy of Formation ($\Delta G_f^\circ$)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-chemical-potential-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 Chemical Potential ($\mu$)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 Chemical Potential ($\mu$)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#461-definition-of-chemical-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6.1 Definition of Chemical Potential
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#462-significance-of-chemical-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6.2 Significance of Chemical Potential
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#463-chemical-potential-and-phase-equilibrium" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6.3 Chemical Potential and Phase Equilibrium
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-applications-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Applications of Thermodynamics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Chemical_Bonding_in_Relativistic_Contexts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chemical Bonding in Relativistic Contexts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Quantum_Chemistry_Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantum Chemistry Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Particle_Interactions_in_Chemical_Reactions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Particle Interactions in Chemical Reactions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Relativistic_Effects_in_Heavy_Elements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relativistic Effects in Heavy Elements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Advanced_Thermodynamics_for_Chemistry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Thermodynamics for Chemistry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Summary_and_Future_Perspectives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary and Future Perspectives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/reference_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/external_links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/sample_chapters/advanced_topic_example.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Topic Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch01_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch02_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch03_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch04_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch05_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch06_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-basic-concepts-and-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Basic Concepts and Definitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Basic Concepts and Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-system-and-surroundings" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.1 System and Surroundings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-thermodynamic-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.2 Thermodynamic Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-state-functions-and-path-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.3 State Functions and Path Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414-equilibrium-and-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.4 Equilibrium and Processes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-the-first-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 The First Law of Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 The First Law of Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-internal-energy-u" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 Internal Energy (U)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-heat-q-and-work-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 Heat (q) and Work (w)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-mathematical-statement-of-the-first-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 Mathematical Statement of the First Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424-enthalpy-h" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.4 Enthalpy (H)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-the-second-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 The Second Law of Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 The Second Law of Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431-entropy-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.1 Entropy (S)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432-change-in-entropy-delta-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.2 Change in Entropy ($\Delta S$)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-second-law-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.3 Second Law Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434-statistical-interpretation-of-entropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3.4 Statistical Interpretation of Entropy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-the-third-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 The Third Law of Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 The Third Law of Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441-statement-of-the-third-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.1 Statement of the Third Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-implications-of-the-third-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.2 Implications of the Third Law
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-gibbs-free-energy-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Gibbs Free Energy (G)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 Gibbs Free Energy (G)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#451-definition-of-gibbs-free-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.1 Definition of Gibbs Free Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452-change-in-gibbs-free-energy-delta-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.2 Change in Gibbs Free Energy ($\Delta G$)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#453-spontaneity-and-equilibrium" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.3 Spontaneity and Equilibrium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#454-standard-gibbs-free-energy-of-formation-delta-g_fcirc" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.4 Standard Gibbs Free Energy of Formation ($\Delta G_f^\circ$)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-chemical-potential-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 Chemical Potential ($\mu$)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 Chemical Potential ($\mu$)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#461-definition-of-chemical-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6.1 Definition of Chemical Potential
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#462-significance-of-chemical-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6.2 Significance of Chemical Potential
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#463-chemical-potential-and-phase-equilibrium" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6.3 Chemical Potential and Phase Equilibrium
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-applications-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Applications of Thermodynamics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="thermodynamics-foundations">Thermodynamics Foundations</h1>
+<p>This chapter introduces the foundational principles of thermodynamics, which are essential for understanding chemical reactions, phase transitions, and the behavior of matter at the macroscopic level. While thermodynamics is a classical theory, its principles are indispensable in chemistry and provide the framework for understanding energy, entropy, and equilibrium. These concepts will be crucial when we later discuss advanced thermodynamics and statistical mechanics in relativistic contexts.</p>
+<h2 id="41-basic-concepts-and-definitions">4.1 Basic Concepts and Definitions</h2>
+<p>Thermodynamics is concerned with energy and its transformations. It deals with macroscopic systems and their properties, such as temperature, pressure, volume, and chemical potential.</p>
+<h3 id="411-system-and-surroundings">4.1.1 System and Surroundings</h3>
+<p>In thermodynamics, a system is the part of the universe that is under study, while the surroundings are everything outside the system. Systems can be classified as:</p>
+<ul>
+<li><strong>Isolated system</strong>: No exchange of matter or energy with the surroundings.</li>
+<li><strong>Closed system</strong>: Exchange of energy but not matter with the surroundings.</li>
+<li><strong>Open system</strong>: Exchange of both energy and matter with the surroundings.</li>
+</ul>
+<h3 id="412-thermodynamic-properties">4.1.2 Thermodynamic Properties</h3>
+<p>Thermodynamic properties are macroscopic characteristics of a system. They can be classified as:</p>
+<ul>
+<li><strong>Intensive properties</strong>: Independent of the amount of substance in the system (e.g., temperature, pressure, density).</li>
+<li><strong>Extensive properties</strong>: Dependent on the amount of substance in the system (e.g., volume, mass, energy).</li>
+</ul>
+<h3 id="413-state-functions-and-path-functions">4.1.3 State Functions and Path Functions</h3>
+<ul>
+<li><strong>State functions</strong>: Properties that depend only on the current state of the system, not on the path taken to reach that state (e.g., internal energy, enthalpy, entropy, Gibbs free energy).</li>
+<li><strong>Path functions</strong>: Properties that depend on the path taken between two states (e.g., heat, work).</li>
+</ul>
+<h3 id="414-equilibrium-and-processes">4.1.4 Equilibrium and Processes</h3>
+<ul>
+<li><strong>Thermodynamic equilibrium</strong>: A state where the system's properties are not changing with time, and there are no net flows of energy or matter within the system or between the system and surroundings.</li>
+<li><strong>Thermodynamic process</strong>: A change in the state of a system. Processes can be:<ul>
+<li><strong>Isothermal</strong>: Constant temperature.</li>
+<li><strong>Isobaric</strong>: Constant pressure.</li>
+<li><strong>Isochoric</strong>: Constant volume.</li>
+<li><strong>Adiabatic</strong>: No heat exchange with the surroundings.</li>
+<li><strong>Reversible</strong>: A process that can be reversed by an infinitesimal change in conditions, and the system is always in equilibrium.</li>
+<li><strong>Irreversible</strong>: A process that cannot be reversed, and the system is not in equilibrium during the process.</li>
+</ul>
+</li>
+</ul>
+<h2 id="42-the-first-law-of-thermodynamics">4.2 The First Law of Thermodynamics</h2>
+<p>The first law of thermodynamics is the principle of energy conservation. It states that energy cannot be created or destroyed, only converted from one form to another.</p>
+<h3 id="421-internal-energy-u">4.2.1 Internal Energy (U)</h3>
+<p>Internal energy (U) is the total energy stored within a system, including kinetic and potential energies of molecules. It is a state function.</p>
+<h3 id="422-heat-q-and-work-w">4.2.2 Heat (q) and Work (w)</h3>
+<ul>
+<li><strong>Heat (q)</strong>: Energy transferred between the system and surroundings due to a temperature difference. Positive q means heat is absorbed by the system (endothermic), negative q means heat is released by the system (exothermic).</li>
+<li><strong>Work (w)</strong>: Energy transferred between the system and surroundings due to a force acting through a distance, other than temperature difference. In chemistry, common work is pressure-volume work (expansion or compression). Positive w means work is done on the system, negative w means work is done by the system.</li>
+</ul>
+<h3 id="423-mathematical-statement-of-the-first-law">4.2.3 Mathematical Statement of the First Law</h3>
+<p>The change in internal energy ($\Delta U$) of a closed system is given by:</p>
+<p>$$
+\Delta U = q + w
+$$</p>
+<p>For infinitesimal changes, it is written as:</p>
+<p>$$
+dU = dq + dw
+$$</p>
+<h3 id="424-enthalpy-h">4.2.4 Enthalpy (H)</h3>
+<p>Enthalpy (H) is a state function defined as:</p>
+<p>$$
+H = U + PV
+$$</p>
+<p>where P is pressure and V is volume. The change in enthalpy ($\Delta H$) at constant pressure is equal to the heat exchanged with the surroundings:</p>
+<p>$$
+\Delta H = \Delta U + P\Delta V = q_p
+$$</p>
+<p>Enthalpy is particularly useful for studying reactions at constant pressure (common in chemistry).</p>
+<h2 id="43-the-second-law-of-thermodynamics">4.3 The Second Law of Thermodynamics</h2>
+<p>The second law of thermodynamics introduces the concept of entropy and the direction of spontaneous processes. It states that the total entropy of an isolated system always increases or remains constant in a reversible process.</p>
+<h3 id="431-entropy-s">4.3.1 Entropy (S)</h3>
+<p>Entropy (S) is a state function that measures the degree of disorder or randomness in a system. It is related to the number of microstates ($\Omega$) accessible to the system:</p>
+<p>$$
+S = k_B \ln \Omega
+$$</p>
+<p>where $k_B$ is the Boltzmann constant.</p>
+<h3 id="432-change-in-entropy-delta-s">4.3.2 Change in Entropy ($\Delta S$)</h3>
+<p>The change in entropy ($\Delta S$) for a reversible process at temperature T is given by:</p>
+<p>$$
+\Delta S = \frac{q_{rev}}{T}
+$$</p>
+<p>For irreversible processes, $\Delta S &gt; \frac{q}{T}$.</p>
+<h3 id="433-second-law-statement">4.3.3 Second Law Statement</h3>
+<p>The second law of thermodynamics can be stated in several ways:</p>
+<ul>
+<li>For any spontaneous process in an isolated system, the entropy increases ($\Delta S_{total} &gt; 0$).</li>
+<li>The entropy of the universe tends to increase.</li>
+<li>Heat cannot spontaneously flow from a colder body to a hotter body.</li>
+</ul>
+<h3 id="434-statistical-interpretation-of-entropy">4.3.4 Statistical Interpretation of Entropy</h3>
+<p>Entropy is related to the probability of a state. Systems tend to evolve towards states of higher probability and greater disorder.</p>
+<h2 id="44-the-third-law-of-thermodynamics">4.4 The Third Law of Thermodynamics</h2>
+<p>The third law of thermodynamics defines the absolute zero of entropy. It states that the entropy of a perfect crystal at absolute zero (0 K) is zero.</p>
+<h3 id="441-statement-of-the-third-law">4.4.1 Statement of the Third Law</h3>
+<p>The entropy of a perfect crystalline substance at absolute zero temperature is zero:</p>
+<p>$$
+S(T=0 \text{ K}) = 0
+$$</p>
+<h3 id="442-implications-of-the-third-law">4.4.2 Implications of the Third Law</h3>
+<ul>
+<li>It provides a reference point for entropy calculations.</li>
+<li>It implies that absolute zero is unattainable in a finite number of steps.</li>
+<li>It allows for the calculation of absolute entropies at different temperatures using heat capacity data.</li>
+</ul>
+<h2 id="45-gibbs-free-energy-g">4.5 Gibbs Free Energy (G)</h2>
+<p>Gibbs free energy (G) is a thermodynamic potential that combines enthalpy and entropy to determine the spontaneity of a process at constant temperature and pressure.</p>
+<h3 id="451-definition-of-gibbs-free-energy">4.5.1 Definition of Gibbs Free Energy</h3>
+<p>Gibbs free energy (G) is defined as:</p>
+<p>$$
+G = H - TS
+$$</p>
+<p>where H is enthalpy, T is temperature, and S is entropy. Gibbs free energy is a state function.</p>
+<h3 id="452-change-in-gibbs-free-energy-delta-g">4.5.2 Change in Gibbs Free Energy ($\Delta G$)</h3>
+<p>The change in Gibbs free energy ($\Delta G$) at constant temperature and pressure is given by:</p>
+<p>$$
+\Delta G = \Delta H - T\Delta S
+$$</p>
+<h3 id="453-spontaneity-and-equilibrium">4.5.3 Spontaneity and Equilibrium</h3>
+<p>Gibbs free energy is a criterion for spontaneity at constant temperature and pressure:</p>
+<ul>
+<li>$\Delta G &lt; 0$: Process is spontaneous ( Gibbs free energy decreases).</li>
+<li>$\Delta G &gt; 0$: Process is non-spontaneous ( Gibbs free energy increases, reverse process is spontaneous).</li>
+<li>$\Delta G = 0$: Process is at equilibrium (no net change).</li>
+</ul>
+<h3 id="454-standard-gibbs-free-energy-of-formation-delta-g_fcirc">4.5.4 Standard Gibbs Free Energy of Formation ($\Delta G_f^\circ$)</h3>
+<p>The standard Gibbs free energy of formation ($\Delta G_f^\circ$) is the change in Gibbs free energy when one mole of a compound is formed from its elements in their standard states. It is used to calculate the standard Gibbs free energy change for reactions:</p>
+<p>$$
+\Delta G_{rxn}^\circ = \sum \nu_i \Delta G_{f}^\circ(\text{products}) - \sum \nu_i \Delta G_{f}^\circ(\text{reactants})
+$$</p>
+<p>where $\nu_i$ are the stoichiometric coefficients.</p>
+<h2 id="46-chemical-potential-mu">4.6 Chemical Potential ($\mu$)</h2>
+<p>Chemical potential ($\mu$) is the change in Gibbs free energy with respect to the change in the amount of a component, at constant temperature, pressure, and amounts of other components.</p>
+<h3 id="461-definition-of-chemical-potential">4.6.1 Definition of Chemical Potential</h3>
+<p>For a component $i$ in a mixture, the chemical potential $\mu_i$ is defined as:</p>
+<p>$$
+\mu_i = \left(\frac{\partial G}{\partial n_i}\right)<em>{T, P, n</em>{j\neq i}}
+$$</p>
+<p>where $n_i$ is the amount of component $i$, and $n_{j\neq i}$ represents the amounts of all other components.</p>
+<h3 id="462-significance-of-chemical-potential">4.6.2 Significance of Chemical Potential</h3>
+<ul>
+<li>Chemical potential is the driving force for chemical reactions and phase transitions.</li>
+<li>Systems tend to move towards states of lower chemical potential.</li>
+<li>At equilibrium, the chemical potential of each component is the same in all phases or regions of the system.</li>
+</ul>
+<h3 id="463-chemical-potential-and-phase-equilibrium">4.6.3 Chemical Potential and Phase Equilibrium</h3>
+<p>For a substance distributed between two phases ($\alpha$ and $\beta$) at equilibrium:</p>
+<p>$$
+\mu_i^\alpha = \mu_i^\beta
+$$</p>
+<p>This condition is fundamental for understanding phase transitions and phase diagrams.</p>
+<h2 id="47-applications-of-thermodynamics">4.7 Applications of Thermodynamics</h2>
+<p>Thermodynamics has wide-ranging applications in chemistry and related fields:</p>
+<ul>
+<li><strong>Predicting spontaneity of reactions</strong>: Using Gibbs free energy change.</li>
+<li><strong>Determining equilibrium conditions</strong>: Using $\Delta G = 0$ and chemical potentials.</li>
+<li><strong>Calculating heat and work in processes</strong>: Using the first law of thermodynamics.</li>
+<li><strong>Understanding phase transitions</strong>: Using chemical potentials and phase diagrams.</li>
+<li><strong>Analyzing efficiency of engines and refrigerators</strong>: Using thermodynamic cycles.</li>
+</ul>
+<p>These foundational concepts of thermodynamics are essential for understanding chemical systems and processes. In later chapters, we will extend these principles to more advanced topics, including statistical mechanics and relativistic thermodynamics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f13b1293.min.js"></script>
+      
+    
+  </body>
+</html>

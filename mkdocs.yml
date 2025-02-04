@@ -1,0 +1,27 @@
+site_name: OPENBOOK
+theme: material
+nav:
+  - Home: docs/index.md
+  - Introduction: docs/00_Introduction.md
+  - Basics of Relativity: docs/01_Basics_of_Relativity.md
+  - Quantum Mechanics Primer: docs/02_Quantum_Mechanics_Primer.md
+  - Particle Physics and Atomic Structure: docs/03_Particle_Physics_and_Atomic_Structure.md
+  - Thermodynamics Foundations: docs/04_Thermodynamics_Foundations.md
+  - Chemical Bonding in Relativistic Contexts: docs/05_Chemical_Bonding_in_Relativistic_Contexts.md
+  - Quantum Chemistry Basics: docs/06_Quantum_Chemistry_Basics.md
+  - Particle Interactions in Chemical Reactions: docs/07_Particle_Interactions_in_Chemical_Reactions.md
+  - Relativistic Effects in Heavy Elements: docs/08_Relativistic_Effects_in_Heavy_Elements.md
+  - Advanced Thermodynamics for Chemistry: docs/09_Advanced_Thermodynamics_for_Chemistry.md
+  - Summary and Future Perspectives: docs/10_Summary_and_Future_Perspectives.md
+  - References:
+    - Reference List: docs/references/reference_list.md
+    - External Links: docs/references/external_links.md
+  - Examples:
+    - Advanced Topic Example: docs/examples/sample_chapters/advanced_topic_example.md
+  - Exercises:
+    - Chapter 1: docs/exercises/ch01_exercises.md
+    - Chapter 2: docs/exercises/ch02_exercises.md
+    - Chapter 3: docs/exercises/ch03_exercises.md
+    - Chapter 4: docs/exercises/ch04_exercises.md
+    - Chapter 5: docs/exercises/ch05_exercises.md
+    - Chapter 6: docs/exercises/ch06_exercises.md

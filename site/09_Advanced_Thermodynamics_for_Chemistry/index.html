@@ -1,0 +1,1352 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../08_Relativistic_Effects_in_Heavy_Elements/">
+      
+      
+        <link rel="next" href="../10_Summary_and_Future_Perspectives/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
+    
+    
+      
+        <title>Advanced Thermodynamics for Chemistry - OPENBOOK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-thermodynamics-for-chemistry" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPENBOOK" class="md-header__button md-logo" aria-label="OPENBOOK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPENBOOK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Thermodynamics for Chemistry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPENBOOK" class="md-nav__button md-logo" aria-label="OPENBOOK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPENBOOK
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Basics_of_Relativity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics of Relativity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Quantum_Mechanics_Primer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics Primer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Particle_Physics_and_Atomic_Structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Particle Physics and Atomic Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Thermodynamics_Foundations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermodynamics Foundations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Chemical_Bonding_in_Relativistic_Contexts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chemical Bonding in Relativistic Contexts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Quantum_Chemistry_Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantum Chemistry Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Particle_Interactions_in_Chemical_Reactions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Particle Interactions in Chemical Reactions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Relativistic_Effects_in_Heavy_Elements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relativistic Effects in Heavy Elements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Advanced Thermodynamics for Chemistry
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Thermodynamics for Chemistry
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#91-statistical-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Statistical Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.1 Statistical Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#911-ensembles-in-statistical-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.1 Ensembles in Statistical Mechanics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#912-partition-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.2 Partition Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#913-thermodynamic-properties-from-partition-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.3 Thermodynamic Properties from Partition Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#914-applications-of-statistical-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.4 Applications of Statistical Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-non-equilibrium-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Non-Equilibrium Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.2 Non-Equilibrium Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#921-irreversible-processes-and-entropy-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.1 Irreversible Processes and Entropy Production
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#922-linear-irreversible-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.2 Linear Irreversible Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#923-entropy-production-in-linear-transport-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.3 Entropy Production in Linear Transport Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#924-applications-of-non-equilibrium-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.4 Applications of Non-Equilibrium Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-advanced-applications-of-thermodynamics-in-chemistry" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Advanced Applications of Thermodynamics in Chemistry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.3 Advanced Applications of Thermodynamics in Chemistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#931-thermodynamics-of-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.1 Thermodynamics of Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#932-phase-equilibria-and-phase-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.2 Phase Equilibria and Phase Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#933-chemical-reaction-equilibria-in-complex-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.3 Chemical Reaction Equilibria in Complex Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#934-thermodynamics-of-interfaces-and-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.4 Thermodynamics of Interfaces and Surfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#935-irreversible-thermodynamics-in-chemical-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.5 Irreversible Thermodynamics in Chemical Reactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Summary_and_Future_Perspectives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary and Future Perspectives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/reference_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/external_links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/sample_chapters/advanced_topic_example.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Topic Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch01_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch02_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch03_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch04_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch05_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/ch06_exercises.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#91-statistical-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Statistical Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.1 Statistical Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#911-ensembles-in-statistical-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.1 Ensembles in Statistical Mechanics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#912-partition-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.2 Partition Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#913-thermodynamic-properties-from-partition-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.3 Thermodynamic Properties from Partition Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#914-applications-of-statistical-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.4 Applications of Statistical Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-non-equilibrium-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Non-Equilibrium Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.2 Non-Equilibrium Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#921-irreversible-processes-and-entropy-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.1 Irreversible Processes and Entropy Production
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#922-linear-irreversible-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.2 Linear Irreversible Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#923-entropy-production-in-linear-transport-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.3 Entropy Production in Linear Transport Processes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#924-applications-of-non-equilibrium-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2.4 Applications of Non-Equilibrium Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-advanced-applications-of-thermodynamics-in-chemistry" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Advanced Applications of Thermodynamics in Chemistry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.3 Advanced Applications of Thermodynamics in Chemistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#931-thermodynamics-of-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.1 Thermodynamics of Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#932-phase-equilibria-and-phase-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.2 Phase Equilibria and Phase Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#933-chemical-reaction-equilibria-in-complex-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.3 Chemical Reaction Equilibria in Complex Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#934-thermodynamics-of-interfaces-and-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.4 Thermodynamics of Interfaces and Surfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#935-irreversible-thermodynamics-in-chemical-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.5 Irreversible Thermodynamics in Chemical Reactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="advanced-thermodynamics-for-chemistry">Advanced Thermodynamics for Chemistry</h1>
+<p>This chapter delves into advanced topics in thermodynamics that are particularly relevant to chemistry. Building upon the foundational concepts from earlier chapters, we will explore more complex aspects such as statistical thermodynamics, non-equilibrium thermodynamics, and advanced applications of thermodynamics in chemical systems.</p>
+<h2 id="91-statistical-thermodynamics">9.1 Statistical Thermodynamics</h2>
+<p>Statistical thermodynamics provides a bridge between the microscopic properties of individual molecules and the macroscopic thermodynamic properties of bulk systems. It uses statistical mechanics to derive thermodynamic quantities from molecular properties.</p>
+<h3 id="911-ensembles-in-statistical-mechanics">9.1.1 Ensembles in Statistical Mechanics</h3>
+<p>Ensembles are collections of a large number of virtual copies of a system, each in a possible microstate consistent with the system's macroscopic constraints.</p>
+<ul>
+<li><strong>Microcanonical Ensemble (NVE)</strong>: Represents isolated systems with constant number of particles (N), volume (V), and energy (E). All microstates with the same energy are equally probable.</li>
+<li><strong>Canonical Ensemble (NVT)</strong>: Represents closed systems in thermal equilibrium with a heat bath at constant temperature (T), with constant N and V. The probability of a microstate is given by the Boltzmann distribution.</li>
+<li><strong>Grand Canonical Ensemble ($\mu$VT)</strong>: Represents open systems that can exchange particles and energy with a reservoir, with constant chemical potential ($\mu$), V, and T.</li>
+</ul>
+<h3 id="912-partition-functions">9.1.2 Partition Functions</h3>
+<p>The partition function is a central concept in statistical thermodynamics. It encapsulates how energy is partitioned among the various degrees of freedom of a system at a given temperature.</p>
+<ul>
+<li><strong>Molecular Partition Function (q)</strong>: For a single molecule, it sums over the energy states of that molecule:
+  $$
+  q = \sum_{i} g_i \exp\left(-\frac{\epsilon_i}{k_B T}\right)
+  $$
+  where $g_i$ is the degeneracy of the $i$-th energy level $\epsilon_i$.</li>
+<li><strong>System Partition Function (Q)</strong>: For a system of N indistinguishable, non-interacting molecules, the system partition function is related to the molecular partition function:
+  $$
+  Q = \frac{q^N}{N!}
+  $$
+  for distinguishable molecules, $Q = q^N$.</li>
+</ul>
+<h3 id="913-thermodynamic-properties-from-partition-functions">9.1.3 Thermodynamic Properties from Partition Functions</h3>
+<p>Thermodynamic properties can be derived from the partition function:</p>
+<ul>
+<li><strong>Internal Energy (U)</strong>:
+  $$
+  U = -\left(\frac{\partial \ln Q}{\partial \beta}\right)<em>{N,V} = k_B T^2 \left(\frac{\partial \ln Q}{\partial T}\right)</em>{N,V}
+  $$
+  where $\beta = 1/(k_B T)$.</li>
+<li><strong>Entropy (S)</strong>:
+  $$
+  S = k_B \ln Q + k_B T \left(\frac{\partial \ln Q}{\partial T}\right)_{N,V} = k_B \ln Q + \frac{U}{T}
+  $$</li>
+<li><strong>Helmholtz Free Energy (A)</strong>:
+  $$
+  A = -k_B T \ln Q
+  $$</li>
+<li><strong>Pressure (P)</strong>:
+  $$
+  P = k_B T \left(\frac{\partial \ln Q}{\partial V}\right)_{N,T}
+  $$</li>
+<li><strong>Chemical Potential ($\mu$)</strong>:
+  $$
+  \mu = -k_B T \left(\frac{\partial \ln Q}{\partial N}\right)_{V,T}
+  $$</li>
+</ul>
+<h3 id="914-applications-of-statistical-thermodynamics">9.1.4 Applications of Statistical Thermodynamics</h3>
+<ul>
+<li><strong>Calculating Thermodynamic Properties</strong>: Statistical thermodynamics allows for the calculation of thermodynamic properties (U, S, A, P, $\mu$, etc.) from spectroscopic data and molecular parameters.</li>
+<li><strong>Equilibrium Constants</strong>: Equilibrium constants for chemical reactions can be calculated from partition functions of reactants and products.</li>
+<li><strong>Phase Transitions</strong>: Statistical thermodynamics provides a framework to understand phase transitions and critical phenomena.</li>
+</ul>
+<h2 id="92-non-equilibrium-thermodynamics">9.2 Non-Equilibrium Thermodynamics</h2>
+<p>Classical thermodynamics deals primarily with equilibrium states and reversible processes. Non-equilibrium thermodynamics extends thermodynamic principles to systems that are not in equilibrium and undergo irreversible processes.</p>
+<h3 id="921-irreversible-processes-and-entropy-production">9.2.1 Irreversible Processes and Entropy Production</h3>
+<ul>
+<li><strong>Entropy Production ($\dot{S}_{irr}$)</strong>: In irreversible processes, entropy is produced within the system, in addition to any entropy exchange with the surroundings. The total entropy change is:
+  $$
+  dS = dS_{ex} + dS_{irr}
+  $$
+  where $dS_{ex}$ is the entropy exchanged with the surroundings, and $dS_{irr} \ge 0$ is the entropy produced internally.</li>
+<li><strong>Thermodynamic Forces and Fluxes</strong>: Non-equilibrium processes are described in terms of thermodynamic forces (gradients of intensive variables) and fluxes (rates of transport processes). For example, temperature gradient is a force, and heat flux is the corresponding flux.</li>
+</ul>
+<h3 id="922-linear-irreversible-thermodynamics">9.2.2 Linear Irreversible Thermodynamics</h3>
+<p>In linear irreversible thermodynamics, fluxes are assumed to be linearly related to thermodynamic forces:</p>
+<p>$$
+J_i = \sum_{j} L_{ij} X_j
+$$</p>
+<p>where $J_i$ are fluxes, $X_j$ are thermodynamic forces, and $L_{ij}$ are Onsager coefficients.</p>
+<ul>
+<li><strong>Onsager Reciprocal Relations</strong>: For many systems, the Onsager coefficients satisfy reciprocal relations: $L_{ij} = L_{ji}$. These relations arise from the microscopic reversibility of physical laws.</li>
+<li><strong>Examples of Linear Transport Processes</strong>: Heat conduction, diffusion, electrical conduction, and viscous flow.</li>
+</ul>
+<h3 id="923-entropy-production-in-linear-transport-processes">9.2.3 Entropy Production in Linear Transport Processes</h3>
+<p>For linear transport processes, the rate of entropy production is given by:</p>
+<p>$$
+\dot{S}<em>{irr} = \sum</em>{i} J_i X_i \ge 0
+$$</p>
+<p>For example, for heat conduction, $J_q$ is heat flux, $X_q = -\nabla (1/T)$ is the thermodynamic force, and $\dot{S}_{irr} = J_q X_q$.</p>
+<h3 id="924-applications-of-non-equilibrium-thermodynamics">9.2.4 Applications of Non-Equilibrium Thermodynamics</h3>
+<ul>
+<li><strong>Transport Phenomena</strong>: Understanding and modeling transport processes like heat transfer, mass diffusion, and electrical conduction.</li>
+<li><strong>Chemical Kinetics</strong>: Describing reaction rates and mechanisms in systems far from equilibrium.</li>
+<li><strong>Biological Systems</strong>: Analyzing energy flow and entropy production in living organisms.</li>
+<li><strong>Materials Science</strong>: Studying non-equilibrium processes in materials, such as crystal growth, polymer dynamics, and phase separation.</li>
+</ul>
+<h2 id="93-advanced-applications-of-thermodynamics-in-chemistry">9.3 Advanced Applications of Thermodynamics in Chemistry</h2>
+<p>Thermodynamics has numerous advanced applications in various areas of chemistry.</p>
+<h3 id="931-thermodynamics-of-solutions">9.3.1 Thermodynamics of Solutions</h3>
+<ul>
+<li><strong>Non-ideal Solutions</strong>: Real solutions deviate from ideal behavior due to intermolecular interactions. Thermodynamics of non-ideal solutions involves concepts like activity, activity coefficients, and excess Gibbs free energy.</li>
+<li><strong>Activity and Activity Coefficients</strong>: Activity ($a_i$) is an effective concentration that accounts for non-ideality. Activity coefficient ($\gamma_i$) relates activity to concentration: $a_i = \gamma_i c_i$.</li>
+<li><strong>Excess Functions</strong>: Excess thermodynamic functions (e.g., $G^E$, $H^E$, $S^E$) quantify deviations from ideal solution behavior.</li>
+<li><strong>Solution Models</strong>: Models like regular solution theory, Flory-Huggins theory (for polymers), and electrolyte solution theories are used to describe non-ideal solutions.</li>
+</ul>
+<h3 id="932-phase-equilibria-and-phase-diagrams">9.3.2 Phase Equilibria and Phase Diagrams</h3>
+<ul>
+<li><strong>Multicomponent Phase Equilibria</strong>: Thermodynamics of multicomponent systems deals with phase equilibria in mixtures, including vapor-liquid, liquid-liquid, and solid-liquid equilibria.</li>
+<li><strong>Phase Diagrams</strong>: Phase diagrams graphically represent the conditions (temperature, pressure, composition) under which different phases are in equilibrium.</li>
+<li><strong>Gibbs Phase Rule</strong>: Determines the number of degrees of freedom (F) in a multiphase system at equilibrium: $F = C - P + 2$, where C is the number of components and P is the number of phases.</li>
+<li><strong>Clausius-Clapeyron Equation</strong>: Describes the temperature dependence of vapor pressure and phase transition boundaries.</li>
+</ul>
+<h3 id="933-chemical-reaction-equilibria-in-complex-systems">9.3.3 Chemical Reaction Equilibria in Complex Systems</h3>
+<ul>
+<li><strong>Multiple Equilibria</strong>: Systems with multiple simultaneous chemical equilibria (e.g., acid-base equilibria, complexation equilibria).</li>
+<li><strong>Coupled Reactions</strong>: Reactions that are thermodynamically coupled, where the Gibbs free energy change of one reaction affects another.</li>
+<li><strong>Electrochemical Thermodynamics</strong>: Thermodynamics of electrochemical cells, including electrode potentials, Nernst equation, and electrochemical equilibrium.</li>
+</ul>
+<h3 id="934-thermodynamics-of-interfaces-and-surfaces">9.3.4 Thermodynamics of Interfaces and Surfaces</h3>
+<ul>
+<li><strong>Surface Tension and Surface Energy</strong>: Thermodynamic properties of interfaces between phases, such as surface tension and surface energy.</li>
+<li><strong>Adsorption</strong>: Thermodynamics of adsorption processes, including adsorption isotherms (Langmuir, BET, etc.).</li>
+<li><strong>Capillary Action</strong>: Thermodynamic explanation of capillary phenomena.</li>
+<li><strong>Colloid and Interface Chemistry</strong>: Thermodynamics of colloidal systems and interfaces, relevant to emulsions, foams, and nanoparticles.</li>
+</ul>
+<h3 id="935-irreversible-thermodynamics-in-chemical-reactions">9.3.5 Irreversible Thermodynamics in Chemical Reactions</h3>
+<ul>
+<li><strong>Reaction Rates and Affinities</strong>: Relating reaction rates to thermodynamic affinities (driving forces for reactions).</li>
+<li><strong>Thermodynamic Control vs. Kinetic Control</strong>: Understanding how thermodynamic factors (equilibrium) and kinetic factors (rates) determine reaction outcomes.</li>
+<li><strong>Dissipative Structures</strong>: In systems far from equilibrium, irreversible processes can lead to the formation of ordered structures (dissipative structures), as seen in some chemical and biological systems.</li>
+</ul>
+<p>In summary, advanced thermodynamics provides powerful tools for understanding and predicting the behavior of complex chemical systems. Statistical thermodynamics connects microscopic and macroscopic properties, non-equilibrium thermodynamics extends thermodynamics to irreversible processes, and advanced applications cover a wide range of chemical phenomena, from solutions and phase equilibria to surface chemistry and reaction dynamics. These advanced concepts are essential for modern chemical research and engineering.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f13b1293.min.js"></script>
+      
+    
+  </body>
+</html>
