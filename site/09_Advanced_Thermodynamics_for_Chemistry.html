@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Advanced Thermodynamics for Chemistry - OPENBOOK</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Advanced Thermodynamics for Chemistry";
+        var mkdocs_page_input_path = "09_Advanced_Thermodynamics_for_Chemistry.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> OPENBOOK
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="00_Introduction.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="01_Basics_of_Relativity.html">Basics of Relativity</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="02_Quantum_Mechanics_Primer.html">Quantum Mechanics Primer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="03_Particle_Physics_and_Atomic_Structure.html">Particle Physics and Atomic Structure</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="04_Thermodynamics_Foundations.html">Thermodynamics Foundations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="05_Chemical_Bonding_in_Relativistic_Contexts.html">Chemical Bonding in Relativistic Contexts</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="06_Quantum_Chemistry_Basics.html">Quantum Chemistry Basics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="07_Particle_Interactions_in_Chemical_Reactions.html">Particle Interactions in Chemical Reactions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="08_Relativistic_Effects_in_Heavy_Elements.html">Relativistic Effects in Heavy Elements</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Advanced Thermodynamics for Chemistry</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#91-statistical-thermodynamics">9.1 Statistical Thermodynamics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#911-microstates-and-macrostates">9.1.1 Microstates and Macrostates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#912-boltzmann-distribution">9.1.2 Boltzmann Distribution</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#913-thermodynamic-functions-from-partition-functions">9.1.3 Thermodynamic Functions from Partition Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#914-molecular-partition-functions">9.1.4 Molecular Partition Functions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#92-non-equilibrium-thermodynamics">9.2 Non-Equilibrium Thermodynamics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#921-fluxes-and-forces">9.2.1 Fluxes and Forces</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#922-linear-phenomenological-laws">9.2.2 Linear Phenomenological Laws</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#923-examples-of-transport-phenomena">9.2.3 Examples of Transport Phenomena</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#924-entropy-production-in-irreversible-processes">9.2.4 Entropy Production in Irreversible Processes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#93-thermodynamics-in-chemical-kinetics">9.3 Thermodynamics in Chemical Kinetics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#931-transition-state-theory-tst">9.3.1 Transition State Theory (TST)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#932-reaction-rates-and-equilibrium-constants">9.3.2 Reaction Rates and Equilibrium Constants</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#933-kinetic-isotope-effects">9.3.3 Kinetic Isotope Effects</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#94-thermodynamics-in-materials-science">9.4 Thermodynamics in Materials Science</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#941-phase-equilibria-and-phase-diagrams">9.4.1 Phase Equilibria and Phase Diagrams</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#942-phase-transformations">9.4.2 Phase Transformations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#943-thermodynamics-of-solutions-and-mixtures">9.4.3 Thermodynamics of Solutions and Mixtures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#944-applications-in-materials-design">9.4.4 Applications in Materials Design</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="10_Summary_and_Future_Perspectives.html">Summary and Future Perspectives</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">References</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="references/reference_list.html">Reference List</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="references/external_links.html">External Links</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Examples</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="examples/sample_chapters/advanced_topic_example.html">Advanced Topic Example</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exercises</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch01_exercises.html">Chapter 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch02_exercises.html">Chapter 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch03_exercises.html">Chapter 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch04_exercises.html">Chapter 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch05_exercises.html">Chapter 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch06_exercises.html">Chapter 6</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="full_textbook.html">Full Textbook</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OPENBOOK</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Advanced Thermodynamics for Chemistry</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><a href="08_Relativistic_Effects_in_Heavy_Elements.html">前の章: 08 Relativistic Effects in Heavy Elements</a> - <a href="10_Summary_and_Future_Perspectives.html">次の章: 10 Summary and Future Perspectives</a></p>
+<h1 id="advanced-thermodynamics-for-chemistry">Advanced Thermodynamics for Chemistry</h1>
+<p>This chapter advances the principles of thermodynamics to address complex chemical systems and phenomena. Building upon the foundational concepts introduced in Chapter 4, we explore advanced topics such as statistical thermodynamics, non-equilibrium thermodynamics, and applications of thermodynamics in chemical kinetics and materials science. This chapter aims to provide a deeper understanding of thermodynamic principles and their broad applicability in chemistry.</p>
+<h2 id="91-statistical-thermodynamics">9.1 Statistical Thermodynamics</h2>
+<p>Statistical thermodynamics provides a bridge between the microscopic properties of individual molecules and the macroscopic thermodynamic properties of bulk systems. It uses statistical mechanics to derive thermodynamic quantities from molecular properties and energy distributions.</p>
+<h3 id="911-microstates-and-macrostates">9.1.1 Microstates and Macrostates</h3>
+<ul>
+<li><strong>Microstate</strong>: A specific microscopic configuration of a system, specifying the quantum state of each molecule in the system.</li>
+<li><strong>Macrostate</strong>: A macroscopic state of a system defined by macroscopic properties such as temperature, pressure, volume, and energy, which can be realized by many different microstates.</li>
+</ul>
+<h3 id="912-boltzmann-distribution">9.1.2 Boltzmann Distribution</h3>
+<p>The Boltzmann distribution describes the probability of finding a molecule in a particular energy state at a given temperature in a system at thermal equilibrium.</p>
+<ul>
+<li><strong>Probability of Energy State</strong>: The probability $P_i$ of a molecule being in an energy state $E_i$ is given by $P_i = \frac{g_i e^{-E_i/kT}}{Q}$, where $g_i$ is the degeneracy of the energy level, $k$ is the Boltzmann constant, $T$ is the temperature, and $Q$ is the partition function.</li>
+<li><strong>Partition Function</strong>: The partition function $Q = \sum_i g_i e^{-E_i/kT}$ is a measure of the number of thermally accessible states at a given temperature and is central to statistical thermodynamics.</li>
+</ul>
+<h3 id="913-thermodynamic-functions-from-partition-functions">9.1.3 Thermodynamic Functions from Partition Functions</h3>
+<p>Statistical thermodynamics allows us to calculate thermodynamic functions from the partition function.</p>
+<ul>
+<li><strong>Internal Energy</strong>: $U = kT^2 \left(\frac{\partial \ln Q}{\partial T}\right)_V$</li>
+<li><strong>Entropy</strong>: $S = k \ln Q + kT \left(\frac{\partial \ln Q}{\partial T}\right)_V = \frac{U}{T} + k \ln Q$</li>
+<li><strong>Helmholtz Free Energy</strong>: $A = -kT \ln Q$</li>
+<li><strong>Gibbs Free Energy</strong>: $G = -kT \ln Q + PV = -kT \ln Q + kT V \left(\frac{\partial \ln Q}{\partial V}\right)_T$</li>
+<li><strong>Pressure</strong>: $P = kT \left(\frac{\partial \ln Q}{\partial V}\right)_T$</li>
+</ul>
+<h3 id="914-molecular-partition-functions">9.1.4 Molecular Partition Functions</h3>
+<p>The total partition function of a system can be approximated as a product of molecular partition functions for independent degrees of freedom (translational, rotational, vibrational, electronic).</p>
+<ul>
+<li><strong>Translational Partition Function</strong>: $q_{trans} = \left(\frac{2\pi mkT}{h^2}\right)^{3/2} V$</li>
+<li><strong>Rotational Partition Function</strong>: For linear molecules, $q_{rot} = \frac{T}{\sigma \Theta_{rot}}$, and for nonlinear molecules, $q_{rot} = \frac{\pi^{1/2}}{\sigma} \left(\frac{T^3}{\Theta_{rot,x} \Theta_{rot,y} \Theta_{rot,z}}\right)^{1/2}$, where $\sigma$ is the symmetry number and $\Theta_{rot}$ are rotational temperatures.</li>
+<li><strong>Vibrational Partition Function</strong>: $q_{vib} = \frac{1}{1 - e^{-\Theta_{vib}/T}}$, where $\Theta_{vib} = \frac{h\nu}{k}$ is the vibrational temperature.</li>
+<li><strong>Electronic Partition Function</strong>: $q_{elec} = \sum_i g_{elec,i} e^{-E_{elec,i}/kT} \approx g_{elec,0}$ at typical temperatures, where $g_{elec,0}$ is the degeneracy of the electronic ground state.</li>
+</ul>
+<h2 id="92-non-equilibrium-thermodynamics">9.2 Non-Equilibrium Thermodynamics</h2>
+<p>Non-equilibrium thermodynamics deals with systems that are not in thermodynamic equilibrium and involve irreversible processes. It extends classical thermodynamics to describe transport phenomena and systems with fluxes of energy and matter.</p>
+<h3 id="921-fluxes-and-forces">9.2.1 Fluxes and Forces</h3>
+<p>Non-equilibrium thermodynamics describes systems in terms of fluxes ($J_i$) and thermodynamic forces ($X_i$).</p>
+<ul>
+<li><strong>Fluxes</strong>: Rates of transport processes, such as heat flux, mass flux, and electric current.</li>
+<li><strong>Forces</strong>: Gradients of thermodynamic variables that drive fluxes, such as temperature gradient, concentration gradient, and electric potential gradient.</li>
+</ul>
+<h3 id="922-linear-phenomenological-laws">9.2.2 Linear Phenomenological Laws</h3>
+<p>For systems close to equilibrium, fluxes are linearly related to thermodynamic forces through phenomenological coefficients ($L_{ij}$).</p>
+<ul>
+<li><strong>General Linear Law</strong>: $J_i = \sum_j L_{ij} X_j$</li>
+<li><strong>Onsager Reciprocal Relations</strong>: $L_{ij} = L_{ji}$, which relate cross-phenomenological coefficients and are a consequence of microscopic reversibility.</li>
+</ul>
+<h3 id="923-examples-of-transport-phenomena">9.2.3 Examples of Transport Phenomena</h3>
+<ul>
+<li><strong>Heat Conduction</strong>: Heat flux ($J_q$) is driven by temperature gradient ($X_q = -\nabla T$), $J_q = -L_{qq} \nabla T = -\kappa \nabla T$, where $\kappa$ is thermal conductivity.</li>
+<li><strong>Diffusion</strong>: Mass flux ($J_m$) is driven by concentration gradient ($X_m = -\nabla \mu$), $J_m = -L_{mm} \nabla \mu = -D \nabla C$, where $D$ is diffusion coefficient and $C$ is concentration.</li>
+<li><strong>Viscosity</strong>: Momentum flux (stress) is driven by velocity gradient (shear rate).</li>
+<li><strong>Electrical Conduction</strong>: Electric current ($J_e$) is driven by electric potential gradient ($X_e = -\nabla \phi$), $J_e = -L_{ee} \nabla \phi = -\sigma \nabla \phi$, where $\sigma$ is electrical conductivity.</li>
+<li><strong>Thermoelectric Effects</strong>: Coupling between heat flux and electric current, such as Seebeck effect and Peltier effect.</li>
+</ul>
+<h3 id="924-entropy-production-in-irreversible-processes">9.2.4 Entropy Production in Irreversible Processes</h3>
+<p>Irreversible processes in non-equilibrium thermodynamics are associated with entropy production ($\sigma$).</p>
+<ul>
+<li><strong>Entropy Production Rate</strong>: $\frac{dS}{dt} = \sum_i J_i X_i = \sigma \geq 0$</li>
+<li><strong>Local Equilibrium Hypothesis</strong>: Non-equilibrium thermodynamics often assumes local equilibrium, where small subsystems are in local thermodynamic equilibrium even if the system as a whole is not in equilibrium.</li>
+</ul>
+<h2 id="93-thermodynamics-in-chemical-kinetics">9.3 Thermodynamics in Chemical Kinetics</h2>
+<p>Thermodynamics plays a crucial role in understanding and predicting the rates and equilibrium of chemical reactions.</p>
+<h3 id="931-transition-state-theory-tst">9.3.1 Transition State Theory (TST)</h3>
+<p>Transition State Theory (TST) combines thermodynamics and kinetics to estimate reaction rates by considering the properties of the transition state.</p>
+<ul>
+<li><strong>Activated Complex</strong>: The transition state is an activated complex at the highest energy point along the reaction coordinate.</li>
+<li><strong>Eyring Equation</strong>: The rate constant $k$ in TST is given by $k = \frac{kT}{h} e^{-\Delta G^\ddagger/RT} = \frac{kT}{h} K^\ddagger$, where $\Delta G^\ddagger$ is the Gibbs free energy of activation, $K^\ddagger = e^{-\Delta G^\ddagger/RT}$ is the equilibrium constant for forming the activated complex, and $\frac{kT}{h}$ is the frequency factor.</li>
+<li><strong>Thermodynamic Interpretation of Activation Parameters</strong>: $\Delta G^\ddagger = \Delta H^\ddagger - T\Delta S^\ddagger$, where $\Delta H^\ddagger$ is the enthalpy of activation and $\Delta S^\ddagger$ is the entropy of activation.</li>
+</ul>
+<h3 id="932-reaction-rates-and-equilibrium-constants">9.3.2 Reaction Rates and Equilibrium Constants</h3>
+<p>Thermodynamics relates reaction rates to equilibrium constants and provides insights into reaction mechanisms.</p>
+<ul>
+<li><strong>Relationship between $K$, $k_f$, and $k_r$</strong>: The equilibrium constant $K$ for a reversible reaction $A \rightleftharpoons B$ is related to the forward rate constant $k_f$ and reverse rate constant $k_r$ by $K = \frac{k_f}{k_r} = e^{-\Delta G^\circ/RT}$, where $\Delta G^\circ$ is the standard Gibbs free energy change of reaction.</li>
+<li><strong>Temperature Dependence of Rate Constants</strong>: The Arrhenius equation $k = A e^{-E_a/RT}$ and the Eyring equation show the temperature dependence of rate constants, which is related to activation energy and Gibbs free energy of activation, respectively.</li>
+</ul>
+<h3 id="933-kinetic-isotope-effects">9.3.3 Kinetic Isotope Effects</h3>
+<p>Kinetic isotope effects (KIEs) are changes in reaction rates when one atom in a reactant is replaced by its isotope. They provide mechanistic information about rate-determining steps.</p>
+<ul>
+<li><strong>Primary KIE</strong>: Isotopic substitution at a bond that is broken or formed in the rate-determining step.</li>
+<li><strong>Secondary KIE</strong>: Isotopic substitution at a bond adjacent to the reacting center.</li>
+<li><strong>Thermodynamic Origin of KIEs</strong>: KIEs arise from changes in vibrational frequencies and zero-point energies upon isotopic substitution, which affect activation energies and reaction rates.</li>
+</ul>
+<h2 id="94-thermodynamics-in-materials-science">9.4 Thermodynamics in Materials Science</h2>
+<p>Thermodynamic principles are essential in materials science for understanding phase equilibria, phase transformations, and material properties.</p>
+<h3 id="941-phase-equilibria-and-phase-diagrams">9.4.1 Phase Equilibria and Phase Diagrams</h3>
+<p>Phase diagrams are graphical representations of the thermodynamic conditions (temperature, pressure, composition) under which different phases of a substance are stable in equilibrium.</p>
+<ul>
+<li><strong>Gibbs Phase Rule</strong>: $F = C - P + 2$, where $F$ is the degrees of freedom, $C$ is the number of components, and $P$ is the number of phases in equilibrium.</li>
+<li><strong>Clausius-Clapeyron Equation</strong>: $\frac{dP}{dT} = \frac{\Delta H_{phase}}{T\Delta V_{phase}}$, describes the temperature dependence of phase boundaries in a P-T phase diagram.</li>
+<li><strong>Lever Rule</strong>: Used to determine the relative amounts of phases in a two-phase region of a phase diagram.</li>
+</ul>
+<h3 id="942-phase-transformations">9.4.2 Phase Transformations</h3>
+<p>Phase transformations involve changes in the physical state of a material, driven by changes in thermodynamic conditions.</p>
+<ul>
+<li><strong>First-Order Phase Transitions</strong>: Involve discontinuous changes in first derivatives of Gibbs free energy (e.g., volume, entropy), such as melting, boiling, and sublimation.</li>
+<li><strong>Second-Order Phase Transitions</strong>: Involve discontinuous changes in second derivatives of Gibbs free energy (e.g., heat capacity, compressibility), such as order-disorder transitions and ferromagnetic transitions.</li>
+<li><strong>Nucleation and Growth</strong>: Phase transformations often proceed via nucleation (formation of small nuclei of the new phase) and growth (increase in size of nuclei).</li>
+</ul>
+<h3 id="943-thermodynamics-of-solutions-and-mixtures">9.4.3 Thermodynamics of Solutions and Mixtures</h3>
+<p>Thermodynamics of solutions and mixtures describes the behavior of multicomponent systems.</p>
+<ul>
+<li><strong>Ideal Solutions</strong>: Solutions that obey Raoult's law and have ideal mixing properties.</li>
+<li><strong>Non-Ideal Solutions</strong>: Solutions that deviate from ideal behavior due to intermolecular interactions. Described by activity coefficients and excess thermodynamic functions.</li>
+<li><strong>Chemical Potential in Mixtures</strong>: $\mu_i = \mu_i^\circ + RT \ln a_i = \mu_i^\circ + RT \ln (\gamma_i x_i)$, where $a_i$ is activity, $\gamma_i$ is activity coefficient, and $x_i$ is mole fraction of component $i$.</li>
+</ul>
+<h3 id="944-applications-in-materials-design">9.4.4 Applications in Materials Design</h3>
+<p>Thermodynamic principles guide the design and processing of materials with desired properties.</p>
+<ul>
+<li><strong>Alloy Design</strong>: Phase diagrams and thermodynamic calculations are used to design alloys with specific phase compositions and properties.</li>
+<li><strong>Ceramic Processing</strong>: Thermodynamics controls sintering, grain growth, and phase stability in ceramic materials.</li>
+<li><strong>Polymer Science</strong>: Thermodynamics governs polymer solubility, phase separation, and thermal transitions in polymers.</li>
+</ul>
+<p>In summary, advanced thermodynamics provides powerful tools for understanding and predicting the behavior of complex chemical systems. Statistical thermodynamics connects microscopic and macroscopic properties, non-equilibrium thermodynamics describes transport phenomena, and thermodynamics in kinetics and materials science provides frameworks for studying reaction rates, phase equilibria, and material properties. This chapter has highlighted some of the advanced applications of thermodynamics in chemistry, demonstrating its central role in modern chemical science and engineering.</p>
+<h2 id="exercises">Exercises</h2>
+<p><a href="exercises/ch09_exercises.html">Exercises(.md)</a>
+<a href="exercises/ch09_exercises.ipynb">Exercises(.ipynb)</a></p>
+<h2 id="references">References</h2>
+<p><a href="references/reference_list.html">References</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="08_Relativistic_Effects_in_Heavy_Elements.html" class="btn btn-neutral float-left" title="Relativistic Effects in Heavy Elements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="10_Summary_and_Future_Perspectives.html" class="btn btn-neutral float-right" title="Summary and Future Perspectives">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="08_Relativistic_Effects_in_Heavy_Elements.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="10_Summary_and_Future_Perspectives.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

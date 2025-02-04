@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Quantum Mechanics Primer - OPENBOOK</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Quantum Mechanics Primer";
+        var mkdocs_page_input_path = "02_Quantum_Mechanics_Primer.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> OPENBOOK
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="00_Introduction.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="01_Basics_of_Relativity.html">Basics of Relativity</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Quantum Mechanics Primer</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#21-wave-particle-duality">2.1 Wave-Particle Duality</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#211-de-broglie-wavelength">2.1.1 de Broglie Wavelength</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#212-experimental-evidence">2.1.2 Experimental Evidence</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#22-the-schrodinger-equation">2.2 The Schrödinger Equation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#221-time-independent-schrodinger-equation">2.2.1 Time-Independent Schrödinger Equation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#23-quantum-operators">2.3 Quantum Operators</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#231-position-operator">2.3.1 Position Operator</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#232-momentum-operator">2.3.2 Momentum Operator</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#233-energy-operator-hamiltonian">2.3.3 Energy Operator (Hamiltonian)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#234-angular-momentum-operator">2.3.4 Angular Momentum Operator</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#24-expectation-values">2.4 Expectation Values</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#25-heisenbergs-uncertainty-principle">2.5 Heisenberg's Uncertainty Principle</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#26-quantum-harmonic-oscillator">2.6 Quantum Harmonic Oscillator</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#261-hamiltonian">2.6.1 Hamiltonian</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#262-energy-eigenvalues">2.6.2 Energy Eigenvalues</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#263-wave-functions">2.6.3 Wave Functions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#27-hydrogen-atom">2.7 Hydrogen Atom</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#271-hamiltonian">2.7.1 Hamiltonian</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#272-energy-eigenvalues">2.7.2 Energy Eigenvalues</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#273-atomic-orbitals">2.7.3 Atomic Orbitals</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#28-spin-angular-momentum">2.8 Spin Angular Momentum</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#281-spin-quantum-numbers">2.8.1 Spin Quantum Numbers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#282-spin-operators">2.8.2 Spin Operators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#283-total-angular-momentum">2.8.3 Total Angular Momentum</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#29-approximation-methods">2.9 Approximation Methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#291-perturbation-theory">2.9.1 Perturbation Theory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#292-variational-method">2.9.2 Variational Method</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#210-time-dependent-quantum-mechanics">2.10 Time-Dependent Quantum Mechanics</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#2101-time-dependent-schrodinger-equation">2.10.1 Time-Dependent Schrödinger Equation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2102-time-evolution-operator">2.10.2 Time Evolution Operator</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2103-transitions-and-spectroscopy">2.10.3 Transitions and Spectroscopy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#211-summary">2.11 Summary</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="03_Particle_Physics_and_Atomic_Structure.html">Particle Physics and Atomic Structure</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="04_Thermodynamics_Foundations.html">Thermodynamics Foundations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="05_Chemical_Bonding_in_Relativistic_Contexts.html">Chemical Bonding in Relativistic Contexts</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="06_Quantum_Chemistry_Basics.html">Quantum Chemistry Basics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="07_Particle_Interactions_in_Chemical_Reactions.html">Particle Interactions in Chemical Reactions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="08_Relativistic_Effects_in_Heavy_Elements.html">Relativistic Effects in Heavy Elements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="09_Advanced_Thermodynamics_for_Chemistry.html">Advanced Thermodynamics for Chemistry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="10_Summary_and_Future_Perspectives.html">Summary and Future Perspectives</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">References</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="references/reference_list.html">Reference List</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="references/external_links.html">External Links</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Examples</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="examples/sample_chapters/advanced_topic_example.html">Advanced Topic Example</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exercises</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch01_exercises.html">Chapter 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch02_exercises.html">Chapter 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch03_exercises.html">Chapter 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch04_exercises.html">Chapter 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch05_exercises.html">Chapter 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="exercises/ch06_exercises.html">Chapter 6</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="full_textbook.html">Full Textbook</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OPENBOOK</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Quantum Mechanics Primer</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><a href="01_Basics_of_Relativity.html">前の章へ</a> | <a href="03_Particle_Physics_and_Atomic_Structure.html">次の章へ</a></p>
+<h1 id="quantum-mechanics-primer">Quantum Mechanics Primer</h1>
+<p>This chapter will provide a primer on quantum mechanics, laying the groundwork for understanding relativistic quantum chemistry. We will cover the fundamental concepts necessary to grasp the quantum phenomena that are crucial in the later chapters.</p>
+<h2 id="21-wave-particle-duality">2.1 Wave-Particle Duality</h2>
+<p>One of the foundational concepts of quantum mechanics is wave-particle duality. This principle states that every quantum entity may be described as both a particle and a wave. </p>
+<h3 id="211-de-broglie-wavelength">2.1.1 de Broglie Wavelength</h3>
+<p>Louis de Broglie proposed that particles, like electrons, can exhibit wave-like properties, with a wavelength $\lambda$ related to their momentum $p$ by the de Broglie relation:</p>
+<p>$$
+\lambda = \frac{h}{p}
+$$</p>
+<p>where $h$ is Planck's constant. This equation implies that particles with larger momentum have shorter wavelengths, and vice versa.</p>
+<h3 id="212-experimental-evidence">2.1.2 Experimental Evidence</h3>
+<p>The wave nature of particles has been experimentally confirmed through phenomena like electron diffraction. In the double-slit experiment, electrons, when passed through two slits, create an interference pattern, which is characteristic of waves.</p>
+<h2 id="22-the-schrodinger-equation">2.2 The Schrödinger Equation</h2>
+<p>The time-dependent Schrödinger equation is the central equation in quantum mechanics that describes how the quantum state of a physical system changes in time.</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>where:
+- $i$ is the imaginary unit,
+- $\hbar = \frac{h}{2\pi}$ is the reduced Planck's constant,
+- $\Psi(\mathbf{r}, t)$ is the wave function, which describes the quantum state of the particle as a function of position $\mathbf{r}$ and time $t$,
+- $\hat{H}$ is the Hamiltonian operator, representing the total energy of the system.</p>
+<p>For a single particle in a potential $V(\mathbf{r}, t)$, the Hamiltonian is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}, t)
+$$</p>
+<p>where $m$ is the mass of the particle and $\nabla^2$ is the Laplacian operator.</p>
+<h3 id="221-time-independent-schrodinger-equation">2.2.1 Time-Independent Schrödinger Equation</h3>
+<p>For stationary states, where the potential energy is time-independent, we can separate variables and obtain the time-independent Schrödinger equation:</p>
+<p>$$
+\hat{H}\psi(\mathbf{r}) = E\psi(\mathbf{r})
+$$</p>
+<p>where:
+- $\psi(\mathbf{r})$ is the time-independent wave function,
+- $E$ is the energy eigenvalue of the stationary state.</p>
+<h2 id="23-quantum-operators">2.3 Quantum Operators</h2>
+<p>In quantum mechanics, physical observables are represented by linear operators acting on the wave function.</p>
+<h3 id="231-position-operator">2.3.1 Position Operator</h3>
+<p>The position operator $\hat{\mathbf{r}}$ simply multiplies the wave function by the position vector $\mathbf{r}$:</p>
+<p>$$
+\hat{\mathbf{r}}\psi(\mathbf{r}) = \mathbf{r}\psi(\mathbf{r})
+$$</p>
+<h3 id="232-momentum-operator">2.3.2 Momentum Operator</h3>
+<p>The momentum operator $\hat{\mathbf{p}}$ is represented in position space as:</p>
+<p>$$
+\hat{\mathbf{p}} = -i\hbar\nabla
+$$</p>
+<p>Applying the momentum operator to a wave function gives:</p>
+<p>$$
+\hat{\mathbf{p}}\psi(\mathbf{r}) = -i\hbar\nabla\psi(\mathbf{r})
+$$</p>
+<h3 id="233-energy-operator-hamiltonian">2.3.3 Energy Operator (Hamiltonian)</h3>
+<p>As introduced in the Schrödinger equation, the Hamiltonian operator $\hat{H}$ represents the total energy of the system.</p>
+<h3 id="234-angular-momentum-operator">2.3.4 Angular Momentum Operator</h3>
+<p>The angular momentum operator $\hat{\mathbf{L}}$ is defined as:</p>
+<p>$$
+\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}
+$$</p>
+<p>In Cartesian coordinates, the components are:</p>
+<p>$$
+\begin{aligned}
+\hat{L}_x &amp;= \hat{y}\hat{p}_z - \hat{z}\hat{p}_y \
+\hat{L}_y &amp;= \hat{z}\hat{p}_x - \hat{x}\hat{p}_z \
+\hat{L}_z &amp;= \hat{x}\hat{p}_y - \hat{y}\hat{p}_x
+\end{aligned}
+$$</p>
+<h2 id="24-expectation-values">2.4 Expectation Values</h2>
+<p>The expectation value of a physical observable $A$, represented by the operator $\hat{A}$, for a system in a state described by the normalized wave function $\Psi$, is given by:</p>
+<p>$$
+\langle A \rangle = \langle \Psi | \hat{A} | \Psi \rangle = \int \Psi^*(\mathbf{r}, t) \hat{A} \Psi(\mathbf{r}, t) d^3r
+$$</p>
+<p>For example, the expectation value of the position $\langle \mathbf{r} \rangle$ and momentum $\langle \mathbf{p} \rangle$ can be calculated using their respective operators.</p>
+<h2 id="25-heisenbergs-uncertainty-principle">2.5 Heisenberg's Uncertainty Principle</h2>
+<p>Heisenberg's uncertainty principle states that there is a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, can be known simultaneously. For position and momentum, this principle is expressed as:</p>
+<p>$$
+\Delta x \Delta p_x \geq \frac{\hbar}{2}
+$$</p>
+<p>where $\Delta x$ and $\Delta p_x$ are the standard deviations of position and momentum in the x-direction, respectively. This principle is not due to limitations in measurement instruments but is inherent in the quantum nature of particles.</p>
+<p>This primer provides a basic overview of quantum mechanics. In the following sections and chapters, we will build upon these fundamental concepts to explore more advanced topics in relativistic quantum chemistry.</p>
+<h2 id="26-quantum-harmonic-oscillator">2.6 Quantum Harmonic Oscillator</h2>
+<p>The quantum harmonic oscillator is a fundamental model in quantum mechanics that describes systems experiencing a restoring force proportional to their displacement from equilibrium. It is used to model molecular vibrations, lattice vibrations in solids, and many other physical systems.</p>
+<h3 id="261-hamiltonian">2.6.1 Hamiltonian</h3>
+<p>The Hamiltonian for a one-dimensional quantum harmonic oscillator is given by:</p>
+<p>$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2
+$$</p>
+<p>where:
+- $\hat{p}$ is the momentum operator,
+- $m$ is the mass of the particle,
+- $\omega$ is the angular frequency of the oscillator,
+- $\hat{x}$ is the position operator.</p>
+<h3 id="262-energy-eigenvalues">2.6.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the quantum harmonic oscillator are quantized and given by:</p>
+<p>$$
+E_n = \hbar\omega\left(n + \frac{1}{2}\right), \quad n = 0, 1, 2, \ldots
+$$</p>
+<p>where $n$ is the quantum number. The lowest energy level, $E_0 = \frac{1}{2}\hbar\omega$, is known as the zero-point energy, which is a purely quantum mechanical phenomenon.</p>
+<h3 id="263-wave-functions">2.6.3 Wave Functions</h3>
+<p>The wave functions for the harmonic oscillator can be expressed in terms of Hermite polynomials. The ground state wave function ($n=0$) is a Gaussian function:</p>
+<p>$$
+\psi_0(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}}
+$$</p>
+<p>and higher energy wave functions are given by:</p>
+<p>$$
+\psi_n(x) = \frac{1}{\sqrt{2^n n!}} \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+$$</p>
+<p>where $H_n(x)$ are the Hermite polynomials.</p>
+<p>The quantum harmonic oscillator illustrates key quantum mechanical concepts such as energy quantization and zero-point energy, and it serves as a crucial building block for understanding more complex quantum systems.</p>
+<h2 id="27-hydrogen-atom">2.7 Hydrogen Atom</h2>
+<p>The hydrogen atom, consisting of a single proton and a single electron, is the simplest atom and one of the most important systems in quantum mechanics. It is the only atom for which the Schrödinger equation can be solved analytically, providing a foundation for understanding more complex atoms and molecules.</p>
+<h3 id="271-hamiltonian">2.7.1 Hamiltonian</h3>
+<p>The Hamiltonian for the hydrogen atom, neglecting relativistic effects and spin-orbit coupling, is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{e^2}{4\pi\epsilon_0 r}
+$$</p>
+<p>where:
+- $\mu = \frac{m_e m_p}{m_e + m_p}$ is the reduced mass of the electron-proton system,
+- $m_e$ is the mass of the electron,
+- $m_p$ is the mass of the proton,
+- $e$ is the elementary charge,
+- $\epsilon_0$ is the vacuum permittivity,
+- $r$ is the distance between the electron and the proton.</p>
+<h3 id="272-energy-eigenvalues">2.7.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the hydrogen atom are given by the Rydberg formula:</p>
+<p>$$
+E_n = -\frac{R_y}{n^2}, \quad n = 1, 2, 3, \ldots
+$$</p>
+<p>where:
+- $R_y = \frac{\mu e^4}{8\epsilon_0^2 h^2} \approx 13.6 \text{ eV}$ is the Rydberg constant,
+- $n$ is the principal quantum number.</p>
+<p>The negative sign indicates that the energy is bound, and $n=1$ corresponds to the ground state, with higher values of $n$ corresponding to excited states.</p>
+<h3 id="273-atomic-orbitals">2.7.3 Atomic Orbitals</h3>
+<p>The wave functions for the hydrogen atom are called atomic orbitals and are described by three quantum numbers:
+- Principal quantum number $n$: determines the energy level and can be any positive integer ($n = 1, 2, 3, \ldots$).
+- Angular momentum or azimuthal quantum number $l$: determines the shape of the orbital and can range from $0$ to $n-1$. ($l=0, 1, 2, \ldots, n-1$)
+- Magnetic quantum number $m_l$: determines the orientation of the orbital in space and can take integer values from $-l$ to $+l$. ($m_l = -l, -l+1, \ldots, 0, \ldots, l-1, l$)</p>
+<p>For example, for $n=1$, we have only $l=0$ and $m_l=0$, which corresponds to the 1s orbital. For $n=2$, we have $l=0$ (2s orbital) and $l=1$ (2p orbitals, with $m_l = -1, 0, 1$).</p>
+<p>The hydrogen atom solutions provide a crucial foundation for understanding the electronic structure of all atoms and molecules, and the concept of atomic orbitals is fundamental in chemistry.</p>
+<h2 id="28-spin-angular-momentum">2.8 Spin Angular Momentum</h2>
+<p>In addition to orbital angular momentum, particles like electrons possess an intrinsic angular momentum called spin angular momentum, or simply spin. Spin is a purely quantum mechanical property with no classical analogue.</p>
+<h3 id="281-spin-quantum-numbers">2.8.1 Spin Quantum Numbers</h3>
+<p>For electrons, spin angular momentum is quantized and described by two quantum numbers:
+- Spin quantum number $s = \frac{1}{2}$ (for electrons, always $\frac{1}{2}$).
+- Spin magnetic quantum number $m_s$: can take two values, $m_s = +\frac{1}{2}$ (spin up, $\uparrow$) and $m_s = -\frac{1}{2}$ (spin down, $\downarrow$).</p>
+<h3 id="282-spin-operators">2.8.2 Spin Operators</h3>
+<p>Spin is also associated with operators, analogous to orbital angular momentum operators. The spin operators $\hat{S}^2$, $\hat{S}_x$, $\hat{S}_y$, and $\hat{S}_z$ satisfy similar commutation relations as the orbital angular momentum operators.</p>
+<h3 id="283-total-angular-momentum">2.8.3 Total Angular Momentum</h3>
+<p>The total angular momentum $\hat{\mathbf{J}}$ of an electron in an atom is the sum of its orbital angular momentum $\hat{\mathbf{L}}$ and spin angular momentum $\hat{\mathbf{S}}$:</p>
+<p>$$
+\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}
+$$</p>
+<p>Total angular momentum is crucial for understanding atomic spectra and magnetic properties, especially in relativistic quantum mechanics where spin-orbit coupling becomes significant.</p>
+<h2 id="29-approximation-methods">2.9 Approximation Methods</h2>
+<p>For most quantum mechanical systems, especially those involving multiple particles, solving the Schrödinger equation analytically is impossible. Therefore, approximation methods are essential tools in quantum mechanics to obtain approximate solutions that are sufficiently accurate for practical purposes. We will briefly introduce two common approximation methods: perturbation theory and the variational method.</p>
+<h3 id="291-perturbation-theory">2.9.1 Perturbation Theory</h3>
+<p>Perturbation theory is used when the Hamiltonian of a system can be written as a sum of an unperturbed Hamiltonian $\hat{H}_0$ for which the solutions are known, and a small perturbation $\hat{H}'$:</p>
+<p>$$
+\hat{H} = \hat{H}_0 + \lambda\hat{H}'
+$$</p>
+<p>where $\lambda$ is a dimensionless parameter much smaller than 1. We can then expand the energy eigenvalues and eigenfunctions in powers of $\lambda$.</p>
+<p>To first order in perturbation theory, the energy correction is given by:</p>
+<p>$$
+E_n^{(1)} = \langle \psi_n^{(0)} | \hat{H}' | \psi_n^{(0)} \rangle
+$$</p>
+<p>and the first-order correction to the wave function is:</p>
+<p>$$
+| \psi_n^{(1)} \rangle = \sum_{k \neq n} \frac{\langle \psi_k^{(0)} | \hat{H}' | \psi_n^{(0)} \rangle}{E_n^{(0)} - E_k^{(0)}} | \psi_k^{(0)} \rangle
+$$</p>
+<p>where $E_n^{(0)}$ and $| \psi_n^{(0)} \rangle$ are the eigenvalues and eigenfunctions of the unperturbed Hamiltonian $\hat{H}_0$.</p>
+<h3 id="292-variational-method">2.9.2 Variational Method</h3>
+<p>The variational method is based on the variational principle, which states that for any trial wave function $\phi$, the expectation value of the Hamiltonian $\hat{H}$ is an upper bound to the true ground state energy $E_0$:</p>
+<p>$$
+\langle \phi | \hat{H} | \phi \rangle \geq E_0
+$$</p>
+<p>By minimizing the expectation value of the Hamiltonian with respect to the parameters in the trial wave function, we can obtain an approximation to the ground state energy and wave function.</p>
+<p>For example, if we choose a trial wave function $\phi(\alpha)$ that depends on a parameter $\alpha$, we can find the optimal $\alpha$ by minimizing the energy expectation value:</p>
+<p>$$
+\frac{d}{d\alpha} \langle \phi(\alpha) | \hat{H} | \phi(\alpha) \rangle = 0
+$$</p>
+<p>The variational method is particularly useful for finding approximate ground state energies and wave functions for complex systems.</p>
+<h2 id="210-time-dependent-quantum-mechanics">2.10 Time-Dependent Quantum Mechanics</h2>
+<p>So far, we have mainly discussed time-independent quantum mechanics and stationary states. However, many phenomena, such as spectroscopy and scattering, require a time-dependent treatment. Time-dependent quantum mechanics describes how quantum systems evolve in time under the influence of time-dependent potentials.</p>
+<h3 id="2101-time-dependent-schrodinger-equation">2.10.1 Time-Dependent Schrödinger Equation</h3>
+<p>As introduced earlier, the time-dependent Schrödinger equation is:</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>For a time-dependent Hamiltonian $\hat{H}(t)$, the solutions $\Psi(\mathbf{r}, t)$ describe the time evolution of the quantum system.</p>
+<h3 id="2102-time-evolution-operator">2.10.2 Time Evolution Operator</h3>
+<p>The time evolution of a quantum state can be formally described by the time evolution operator $\hat{U}(t, t_0)$, which propagates the state from time $t_0$ to time $t$:</p>
+<p>$$
+\Psi(t) = \hat{U}(t, t_0)\Psi(t_0)
+$$</p>
+<p>For a time-independent Hamiltonian, the time evolution operator is given by:</p>
+<p>$$
+\hat{U}(t, t_0) = e^{-i\hat{H}(t - t_0)/\hbar}
+$$</p>
+<p>For time-dependent Hamiltonians, the time evolution operator is more complex and often requires numerical methods or approximations to calculate.</p>
+<h3 id="2103-transitions-and-spectroscopy">2.10.3 Transitions and Spectroscopy</h3>
+<p>Time-dependent quantum mechanics is essential for understanding transitions between quantum states induced by time-dependent perturbations, such as electromagnetic radiation. This is the basis for spectroscopy, where the absorption and emission of photons by atoms and molecules are studied to probe their energy levels and structure.</p>
+<p>In summary, approximation methods and time-dependent quantum mechanics are crucial extensions of basic quantum mechanics that allow us to study more realistic and complex quantum systems and phenomena. These concepts will be further relevant when we discuss relativistic quantum chemistry and its applications.</p>
+<hr />
+<p><a href="01_Basics_of_Relativity.html">前の章へ</a> | <a href="03_Particle_Physics_and_Atomic_Structure.html">次の章へ</a></p>
+<hr />
+<h2 id="211-summary">2.11 Summary</h2>
+<h1 id="quantum-mechanics-primer_1">Quantum Mechanics Primer</h1>
+<p>This chapter will provide a primer on quantum mechanics, laying the groundwork for understanding relativistic quantum chemistry. We will cover the fundamental concepts necessary to grasp the quantum phenomena that are crucial in the later chapters.</p>
+<p><a href="01_Basics_of_Relativity.md">前の章: 01 Basics of Relativity</a> | <a href="03_Particle_Physics_and_Atomic_Structure.md">次の章: 03 Particle Physics and Atomic Structure</a></p>
+<hr />
+<p><a href="01_Basics_of_Relativity.html">前の章へ</a> | <a href="03_Particle_Physics_and_Atomic_Structure.html">次の章へ</a></p>
+<h2 id="21-wave-particle-duality_1">2.1 Wave-Particle Duality</h2>
+<p>One of the foundational concepts of quantum mechanics is wave-particle duality. This principle states that every quantum entity may be described as both a particle and a wave. </p>
+<h3 id="211-de-broglie-wavelength_1">2.1.1 de Broglie Wavelength</h3>
+<p>Louis de Broglie proposed that particles, like electrons, can exhibit wave-like properties, with a wavelength $\lambda$ related to their momentum $p$ by the de Broglie relation:</p>
+<p>$$
+\lambda = \frac{h}{p}
+$$</p>
+<p>where $h$ is Planck's constant. This equation implies that particles with larger momentum have shorter wavelengths, and vice versa.</p>
+<h3 id="212-experimental-evidence_1">2.1.2 Experimental Evidence</h3>
+<p>The wave nature of particles has been experimentally confirmed through phenomena like electron diffraction. In the double-slit experiment, electrons, when passed through two slits, create an interference pattern, which is characteristic of waves.</p>
+<h2 id="22-the-schrodinger-equation_1">2.2 The Schrödinger Equation</h2>
+<p>The time-dependent Schrödinger equation is the central equation in quantum mechanics that describes how the quantum state of a physical system changes in time.</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>where:
+- $i$ is the imaginary unit,
+- $\hbar = \frac{h}{2\pi}$ is the reduced Planck's constant,
+- $\Psi(\mathbf{r}, t)$ is the wave function, which describes the quantum state of the particle as a function of position $\mathbf{r}$ and time $t$,
+- $\hat{H}$ is the Hamiltonian operator, representing the total energy of the system.</p>
+<p>For a single particle in a potential $V(\mathbf{r}, t)$, the Hamiltonian is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}, t)
+$$</p>
+<p>where $m$ is the mass of the particle and $\nabla^2$ is the Laplacian operator.</p>
+<h3 id="221-time-independent-schrodinger-equation_1">2.2.1 Time-Independent Schrödinger Equation</h3>
+<p>For stationary states, where the potential energy is time-independent, we can separate variables and obtain the time-independent Schrödinger equation:</p>
+<p>$$
+\hat{H}\psi(\mathbf{r}) = E\psi(\mathbf{r})
+$$</p>
+<p>where:
+- $\psi(\mathbf{r})$ is the time-independent wave function,
+- $E$ is the energy eigenvalue of the stationary state.</p>
+<h2 id="23-quantum-operators_1">2.3 Quantum Operators</h2>
+<p>In quantum mechanics, physical observables are represented by linear operators acting on the wave function.</p>
+<h3 id="231-position-operator_1">2.3.1 Position Operator</h3>
+<p>The position operator $\hat{\mathbf{r}}$ simply multiplies the wave function by the position vector $\mathbf{r}$:</p>
+<p>$$
+\hat{\mathbf{r}}\psi(\mathbf{r}) = \mathbf{r}\psi(\mathbf{r})
+$$</p>
+<h3 id="232-momentum-operator_1">2.3.2 Momentum Operator</h3>
+<p>The momentum operator $\hat{\mathbf{p}}$ is represented in position space as:</p>
+<p>$$
+\hat{\mathbf{p}} = -i\hbar\nabla
+$$</p>
+<p>Applying the momentum operator to a wave function gives:</p>
+<p>$$
+\hat{\mathbf{p}}\psi(\mathbf{r}) = -i\hbar\nabla\psi(\mathbf{r})
+$$</p>
+<h3 id="233-energy-operator-hamiltonian_1">2.3.3 Energy Operator (Hamiltonian)</h3>
+<p>As introduced in the Schrödinger equation, the Hamiltonian operator $\hat{H}$ represents the total energy of the system.</p>
+<h3 id="234-angular-momentum-operator_1">2.3.4 Angular Momentum Operator</h3>
+<p>The angular momentum operator $\hat{\mathbf{L}}$ is defined as:</p>
+<p>$$
+\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}
+$$</p>
+<p>In Cartesian coordinates, the components are:</p>
+<p>$$
+\begin{aligned}
+\hat{L}_x &amp;= \hat{y}\hat{p}_z - \hat{z}\hat{p}_y \
+\hat{L}_y &amp;= \hat{z}\hat{p}_x - \hat{x}\hat{p}_z \
+\hat{L}_z &amp;= \hat{x}\hat{p}_y - \hat{y}\hat{p}_x
+\end{aligned}
+$$</p>
+<h2 id="24-expectation-values_1">2.4 Expectation Values</h2>
+<p>The expectation value of a physical observable $A$, represented by the operator $\hat{A}$, for a system in a state described by the normalized wave function $\Psi$, is given by:</p>
+<p>$$
+\langle A \rangle = \langle \Psi | \hat{A} | \Psi \rangle = \int \Psi^*(\mathbf{r}, t) \hat{A} \Psi(\mathbf{r}, t) d^3r
+$$</p>
+<p>For example, the expectation value of the position $\langle \mathbf{r} \rangle$ and momentum $\langle \mathbf{p} \rangle$ can be calculated using their respective operators.</p>
+<h2 id="25-heisenbergs-uncertainty-principle_1">2.5 Heisenberg's Uncertainty Principle</h2>
+<p>Heisenberg's uncertainty principle states that there is a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, can be known simultaneously. For position and momentum, this principle is expressed as:</p>
+<p>$$
+\Delta x \Delta p_x \geq \frac{\hbar}{2}
+$$</p>
+<p>where $\Delta x$ and $\Delta p_x$ are the standard deviations of position and momentum in the x-direction, respectively. This principle is not due to limitations in measurement instruments but is inherent in the quantum nature of particles.</p>
+<p>This primer provides a basic overview of quantum mechanics. In the following sections and chapters, we will build upon these fundamental concepts to explore more advanced topics in relativistic quantum chemistry.</p>
+<h2 id="26-quantum-harmonic-oscillator_1">2.6 Quantum Harmonic Oscillator</h2>
+<p>The quantum harmonic oscillator is a fundamental model in quantum mechanics that describes systems experiencing a restoring force proportional to their displacement from equilibrium. It is used to model molecular vibrations, lattice vibrations in solids, and many other physical systems.</p>
+<h3 id="261-hamiltonian_1">2.6.1 Hamiltonian</h3>
+<p>The Hamiltonian for a one-dimensional quantum harmonic oscillator is given by:</p>
+<p>$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2
+$$</p>
+<p>where:
+- $\hat{p}$ is the momentum operator,
+- $m$ is the mass of the particle,
+- $\omega$ is the angular frequency of the oscillator,
+- $\hat{x}$ is the position operator.</p>
+<h3 id="262-energy-eigenvalues_1">2.6.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the quantum harmonic oscillator are quantized and given by:</p>
+<p>$$
+E_n = \hbar\omega\left(n + \frac{1}{2}\right), \quad n = 0, 1, 2, \ldots
+$$</p>
+<p>where $n$ is the quantum number. The lowest energy level, $E_0 = \frac{1}{2}\hbar\omega$, is known as the zero-point energy, which is a purely quantum mechanical phenomenon.</p>
+<h3 id="263-wave-functions_1">2.6.3 Wave Functions</h3>
+<p>The wave functions for the harmonic oscillator can be expressed in terms of Hermite polynomials. The ground state wave function ($n=0$) is a Gaussian function:</p>
+<p>$$
+\psi_0(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}}
+$$</p>
+<p>and higher energy wave functions are given by:</p>
+<p>$$
+\psi_n(x) = \frac{1}{\sqrt{2^n n!}} \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+$$</p>
+<p>where $H_n(x)$ are the Hermite polynomials.</p>
+<p>The quantum harmonic oscillator illustrates key quantum mechanical concepts such as energy quantization and zero-point energy, and it serves as a crucial building block for understanding more complex quantum systems.</p>
+<h2 id="27-hydrogen-atom_1">2.7 Hydrogen Atom</h2>
+<p>The hydrogen atom, consisting of a single proton and a single electron, is the simplest atom and one of the most important systems in quantum mechanics. It is the only atom for which the Schrödinger equation can be solved analytically, providing a foundation for understanding more complex atoms and molecules.</p>
+<h3 id="271-hamiltonian_1">2.7.1 Hamiltonian</h3>
+<p>The Hamiltonian for the hydrogen atom, neglecting relativistic effects and spin-orbit coupling, is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{e^2}{4\pi\epsilon_0 r}
+$$</p>
+<p>where:
+- $\mu = \frac{m_e m_p}{m_e + m_p}$ is the reduced mass of the electron-proton system,
+- $m_e$ is the mass of the electron,
+- $m_p$ is the mass of the proton,
+- $e$ is the elementary charge,
+- $\epsilon_0$ is the vacuum permittivity,
+- $r$ is the distance between the electron and the proton.</p>
+<h3 id="272-energy-eigenvalues_1">2.7.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the hydrogen atom are given by the Rydberg formula:</p>
+<p>$$
+E_n = -\frac{R_y}{n^2}, \quad n = 1, 2, 3, \ldots
+$$</p>
+<p>where:
+- $R_y = \frac{\mu e^4}{8\epsilon_0^2 h^2} \approx 13.6 \text{ eV}$ is the Rydberg constant,
+- $n$ is the principal quantum number.</p>
+<p>The negative sign indicates that the energy is bound, and $n=1$ corresponds to the ground state, with higher values of $n$ corresponding to excited states.</p>
+<h3 id="273-atomic-orbitals_1">2.7.3 Atomic Orbitals</h3>
+<p>The wave functions for the hydrogen atom are called atomic orbitals and are described by three quantum numbers:
+- Principal quantum number $n$: determines the energy level and can be any positive integer ($n = 1, 2, 3, \ldots$).
+- Angular momentum or azimuthal quantum number $l$: determines the shape of the orbital and can range from $0$ to $n-1$. ($l=0, 1, 2, \ldots, n-1$)
+- Magnetic quantum number $m_l$: determines the orientation of the orbital in space and can take integer values from $-l$ to $+l$. ($m_l = -l, -l+1, \ldots, 0, \ldots, l-1, l$)</p>
+<p>For example, for $n=1$, we have only $l=0$ and $m_l=0$, which corresponds to the 1s orbital. For $n=2$, we have $l=0$ (2s orbital) and $l=1$ (2p orbitals, with $m_l = -1, 0, 1$).</p>
+<p>The hydrogen atom solutions provide a crucial foundation for understanding the electronic structure of all atoms and molecules, and the concept of atomic orbitals is fundamental in chemistry.</p>
+<h2 id="28-spin-angular-momentum_1">2.8 Spin Angular Momentum</h2>
+<p>In addition to orbital angular momentum, particles like electrons possess an intrinsic angular momentum called spin angular momentum, or simply spin. Spin is a purely quantum mechanical property with no classical analogue.</p>
+<h3 id="281-spin-quantum-numbers_1">2.8.1 Spin Quantum Numbers</h3>
+<p>For electrons, spin angular momentum is quantized and described by two quantum numbers:
+- Spin quantum number $s = \frac{1}{2}$ (for electrons, always $\frac{1}{2}$).
+- Spin magnetic quantum number $m_s$: can take two values, $m_s = +\frac{1}{2}$ (spin up, $\uparrow$) and $m_s = -\frac{1}{2}$ (spin down, $\downarrow$).</p>
+<h3 id="282-spin-operators_1">2.8.2 Spin Operators</h3>
+<p>Spin is also associated with operators, analogous to orbital angular momentum operators. The spin operators $\hat{S}^2$, $\hat{S}_x$, $\hat{S}_y$, and $\hat{S}_z$ satisfy similar commutation relations as the orbital angular momentum operators.</p>
+<h3 id="283-total-angular-momentum_1">2.8.3 Total Angular Momentum</h3>
+<p>The total angular momentum $\hat{\mathbf{J}}$ of an electron in an atom is the sum of its orbital angular momentum $\hat{\mathbf{L}}$ and spin angular momentum $\hat{\mathbf{S}}$:</p>
+<p>$$
+\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}
+$$</p>
+<p>Total angular momentum is crucial for understanding atomic spectra and magnetic properties, especially in relativistic quantum mechanics where spin-orbit coupling becomes significant.</p>
+<h2 id="29-approximation-methods_1">2.9 Approximation Methods</h2>
+<p>For most quantum mechanical systems, especially those involving multiple particles, solving the Schrödinger equation analytically is impossible. Therefore, approximation methods are essential tools in quantum mechanics to obtain approximate solutions that are sufficiently accurate for practical purposes. We will briefly introduce two common approximation methods: perturbation theory and the variational method.</p>
+<h3 id="291-perturbation-theory_1">2.9.1 Perturbation Theory</h3>
+<p>Perturbation theory is used when the Hamiltonian of a system can be written as a sum of an unperturbed Hamiltonian $\hat{H}_0$ for which the solutions are known, and a small perturbation $\hat{H}'$:</p>
+<p>$$
+\hat{H} = \hat{H}_0 + \lambda\hat{H}'
+$$</p>
+<p>where $\lambda$ is a dimensionless parameter much smaller than 1. We can then expand the energy eigenvalues and eigenfunctions in powers of $\lambda$.</p>
+<p>To first order in perturbation theory, the energy correction is given by:</p>
+<p>$$
+E_n^{(1)} = \langle \psi_n^{(0)} | \hat{H}' | \psi_n^{(0)} \rangle
+$$</p>
+<p>and the first-order correction to the wave function is:</p>
+<p>$$
+| \psi_n^{(1)} \rangle = \sum_{k \neq n} \frac{\langle \psi_k^{(0)} | \hat{H}' | \psi_n^{(0)} \rangle}{E_n^{(0)} - E_k^{(0)}} | \psi_k^{(0)} \rangle
+$$</p>
+<p>where $E_n^{(0)}$ and $| \psi_n^{(0)} \rangle$ are the eigenvalues and eigenfunctions of the unperturbed Hamiltonian $\hat{H}_0$.</p>
+<h3 id="292-variational-method_1">2.9.2 Variational Method</h3>
+<p>The variational method is based on the variational principle, which states that for any trial wave function $\phi$, the expectation value of the Hamiltonian $\hat{H}$ is an upper bound to the true ground state energy $E_0$:</p>
+<p>$$
+\langle \phi | \hat{H} | \phi \rangle \geq E_0
+$$</p>
+<p>By minimizing the expectation value of the Hamiltonian with respect to the parameters in the trial wave function, we can obtain an approximation to the ground state energy and wave function.</p>
+<p>For example, if we choose a trial wave function $\phi(\alpha)$ that depends on a parameter $\alpha$, we can find the optimal $\alpha$ by minimizing the energy expectation value:</p>
+<p>$$
+\frac{d}{d\alpha} \langle \phi(\alpha) | \hat{H} | \phi(\alpha) \rangle = 0
+$$</p>
+<p>The variational method is particularly useful for finding approximate ground state energies and wave functions for complex systems.</p>
+<h2 id="210-time-dependent-quantum-mechanics_1">2.10 Time-Dependent Quantum Mechanics</h2>
+<p>So far, we have mainly discussed time-independent quantum mechanics and stationary states. However, many phenomena, such as spectroscopy and scattering, require a time-dependent treatment. Time-dependent quantum mechanics describes how quantum systems evolve in time under the influence of time-dependent potentials.</p>
+<h3 id="2101-time-dependent-schrodinger-equation_1">2.10.1 Time-Dependent Schrödinger Equation</h3>
+<p>As introduced earlier, the time-dependent Schrödinger equation is:</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>For a time-dependent Hamiltonian $\hat{H}(t)$, the solutions $\Psi(\mathbf{r}, t)$ describe the time evolution of the quantum system.</p>
+<h3 id="2102-time-evolution-operator_1">2.10.2 Time Evolution Operator</h3>
+<p>The time evolution of a quantum state can be formally described by the time evolution operator $\hat{U}(t, t_0)$, which propagates the state from time $t_0$ to time $t$:</p>
+<p>$$
+\Psi(t) = \hat{U}(t, t_0)\Psi(t_0)
+$$</p>
+<p>For a time-independent Hamiltonian, the time evolution operator is given by:</p>
+<p>$$
+\hat{U}(t, t_0) = e^{-i\hat{H}(t - t_0)/\hbar}
+$$</p>
+<p>For time-dependent Hamiltonians, the time evolution operator is more complex and often requires numerical methods or approximations to calculate.</p>
+<h3 id="2103-transitions-and-spectroscopy_1">2.10.3 Transitions and Spectroscopy</h3>
+<p>Time-dependent quantum mechanics is essential for understanding transitions between quantum states induced by time-dependent perturbations, such as electromagnetic radiation. This is the basis for spectroscopy, where the absorption and emission of photons by atoms and molecules are studied to probe their energy levels and structure.</p>
+<p>In summary, approximation methods and time-dependent quantum mechanics are crucial extensions of basic quantum mechanics that allow us to study more realistic and complex quantum systems and phenomena. These concepts will be further relevant when we discuss relativistic quantum chemistry and its applications.</p>
+<h1 id="quantum-mechanics-primer_2">Quantum Mechanics Primer</h1>
+<p>This chapter will provide a primer on quantum mechanics, laying the groundwork for understanding relativistic quantum chemistry. We will cover the fundamental concepts necessary to grasp the quantum phenomena that are crucial in the later chapters.</p>
+<p><a href="01_Basics_of_Relativity.md">前の章: 01 Basics of Relativity</a> | <a href="03_Particle_Physics_and_Atomic_Structure.md">次の章: 03 Particle Physics and Atomic Structure</a></p>
+<hr />
+<p><a href="01_Basics_of_Relativity.html">前の章へ</a> | <a href="03_Particle_Physics_and_Atomic_Structure.html">次の章へ</a></p>
+<h2 id="21-wave-particle-duality_2">2.1 Wave-Particle Duality</h2>
+<p>One of the foundational concepts of quantum mechanics is wave-particle duality. This principle states that every quantum entity may be described as both a particle and a wave. </p>
+<h3 id="211-de-broglie-wavelength_2">2.1.1 de Broglie Wavelength</h3>
+<p>Louis de Broglie proposed that particles, like electrons, can exhibit wave-like properties, with a wavelength $\lambda$ related to their momentum $p$ by the de Broglie relation:</p>
+<p>$$
+\lambda = \frac{h}{p}
+$$</p>
+<p>where $h$ is Planck's constant. This equation implies that particles with larger momentum have shorter wavelengths, and vice versa.</p>
+<h3 id="212-experimental-evidence_2">2.1.2 Experimental Evidence</h3>
+<p>The wave nature of particles has been experimentally confirmed through phenomena like electron diffraction. In the double-slit experiment, electrons, when passed through two slits, create an interference pattern, which is characteristic of waves.</p>
+<h2 id="22-the-schrodinger-equation_2">2.2 The Schrödinger Equation</h2>
+<p>The time-dependent Schrödinger equation is the central equation in quantum mechanics that describes how the quantum state of a physical system changes in time.</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>where:
+- $i$ is the imaginary unit,
+- $\hbar = \frac{h}{2\pi}$ is the reduced Planck's constant,
+- $\Psi(\mathbf{r}, t)$ is the wave function, which describes the quantum state of the particle as a function of position $\mathbf{r}$ and time $t$,
+- $\hat{H}$ is the Hamiltonian operator, representing the total energy of the system.</p>
+<p>For a single particle in a potential $V(\mathbf{r}, t)$, the Hamiltonian is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}, t)
+$$</p>
+<p>where $m$ is the mass of the particle and $\nabla^2$ is the Laplacian operator.</p>
+<h3 id="221-time-independent-schrodinger-equation_2">2.2.1 Time-Independent Schrödinger Equation</h3>
+<p>For stationary states, where the potential energy is time-independent, we can separate variables and obtain the time-independent Schrödinger equation:</p>
+<p>$$
+\hat{H}\psi(\mathbf{r}) = E\psi(\mathbf{r})
+$$</p>
+<p>where:
+- $\psi(\mathbf{r})$ is the time-independent wave function,
+- $E$ is the energy eigenvalue of the stationary state.</p>
+<h2 id="23-quantum-operators_2">2.3 Quantum Operators</h2>
+<p>In quantum mechanics, physical observables are represented by linear operators acting on the wave function.</p>
+<h3 id="231-position-operator_2">2.3.1 Position Operator</h3>
+<p>The position operator $\hat{\mathbf{r}}$ simply multiplies the wave function by the position vector $\mathbf{r}$:</p>
+<p>$$
+\hat{\mathbf{r}}\psi(\mathbf{r}) = \mathbf{r}\psi(\mathbf{r})
+$$</p>
+<h3 id="232-momentum-operator_2">2.3.2 Momentum Operator</h3>
+<p>The momentum operator $\hat{\mathbf{p}}$ is represented in position space as:</p>
+<p>$$
+\hat{\mathbf{p}} = -i\hbar\nabla
+$$</p>
+<p>Applying the momentum operator to a wave function gives:</p>
+<p>$$
+\hat{\mathbf{p}}\psi(\mathbf{r}) = -i\hbar\nabla\psi(\mathbf{r})
+$$</p>
+<h3 id="233-energy-operator-hamiltonian_2">2.3.3 Energy Operator (Hamiltonian)</h3>
+<p>As introduced in the Schrödinger equation, the Hamiltonian operator $\hat{H}$ represents the total energy of the system.</p>
+<h3 id="234-angular-momentum-operator_2">2.3.4 Angular Momentum Operator</h3>
+<p>The angular momentum operator $\hat{\mathbf{L}}$ is defined as:</p>
+<p>$$
+\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}
+$$</p>
+<p>In Cartesian coordinates, the components are:</p>
+<p>$$
+\begin{aligned}
+\hat{L}_x &amp;= \hat{y}\hat{p}_z - \hat{z}\hat{p}_y \
+\hat{L}_y &amp;= \hat{z}\hat{p}_x - \hat{x}\hat{p}_z \
+\hat{L}_z &amp;= \hat{x}\hat{p}_y - \hat{y}\hat{p}_x
+\end{aligned}
+$$</p>
+<h2 id="24-expectation-values_2">2.4 Expectation Values</h2>
+<p>The expectation value of a physical observable $A$, represented by the operator $\hat{A}$, for a system in a state described by the normalized wave function $\Psi$, is given by:</p>
+<p>$$
+\langle A \rangle = \langle \Psi | \hat{A} | \Psi \rangle = \int \Psi^*(\mathbf{r}, t) \hat{A} \Psi(\mathbf{r}, t) d^3r
+$$</p>
+<p>For example, the expectation value of the position $\langle \mathbf{r} \rangle$ and momentum $\langle \mathbf{p} \rangle$ can be calculated using their respective operators.</p>
+<h2 id="25-heisenbergs-uncertainty-principle_2">2.5 Heisenberg's Uncertainty Principle</h2>
+<p>Heisenberg's uncertainty principle states that there is a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, can be known simultaneously. For position and momentum, this principle is expressed as:</p>
+<p>$$
+\Delta x \Delta p_x \geq \frac{\hbar}{2}
+$$</p>
+<p>where $\Delta x$ and $\Delta p_x$ are the standard deviations of position and momentum in the x-direction, respectively. This principle is not due to limitations in measurement instruments but is inherent in the quantum nature of particles.</p>
+<p>This primer provides a basic overview of quantum mechanics. In the following sections and chapters, we will build upon these fundamental concepts to explore more advanced topics in relativistic quantum chemistry.</p>
+<h2 id="26-quantum-harmonic-oscillator_2">2.6 Quantum Harmonic Oscillator</h2>
+<p>The quantum harmonic oscillator is a fundamental model in quantum mechanics that describes systems experiencing a restoring force proportional to their displacement from equilibrium. It is used to model molecular vibrations, lattice vibrations in solids, and many other physical systems.</p>
+<h3 id="261-hamiltonian_2">2.6.1 Hamiltonian</h3>
+<p>The Hamiltonian for a one-dimensional quantum harmonic oscillator is given by:</p>
+<p>$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2
+$$</p>
+<p>where:
+- $\hat{p}$ is the momentum operator,
+- $m$ is the mass of the particle,
+- $\omega$ is the angular frequency of the oscillator,
+- $\hat{x}$ is the position operator.</p>
+<h3 id="262-energy-eigenvalues_2">2.6.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the quantum harmonic oscillator are quantized and given by:</p>
+<p>$$
+E_n = \hbar\omega\left(n + \frac{1}{2}\right), \quad n = 0, 1, 2, \ldots
+$$</p>
+<p>where $n$ is the quantum number. The lowest energy level, $E_0 = \frac{1}{2}\hbar\omega$, is known as the zero-point energy, which is a purely quantum mechanical phenomenon.</p>
+<h3 id="263-wave-functions_2">2.6.3 Wave Functions</h3>
+<p>The wave functions for the harmonic oscillator can be expressed in terms of Hermite polynomials. The ground state wave function ($n=0$) is a Gaussian function:</p>
+<p>$$
+\psi_0(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}}
+$$</p>
+<p>and higher energy wave functions are given by:</p>
+<p>$$
+\psi_n(x) = \frac{1}{\sqrt{2^n n!}} \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+$$</p>
+<p>where $H_n(x)$ are the Hermite polynomials.</p>
+<p>The quantum harmonic oscillator illustrates key quantum mechanical concepts such as energy quantization and zero-point energy, and it serves as a crucial building block for understanding more complex quantum systems.</p>
+<h2 id="27-hydrogen-atom_2">2.7 Hydrogen Atom</h2>
+<p>The hydrogen atom, consisting of a single proton and a single electron, is the simplest atom and one of the most important systems in quantum mechanics. It is the only atom for which the Schrödinger equation can be solved analytically, providing a foundation for understanding more complex atoms and molecules.</p>
+<h3 id="271-hamiltonian_2">2.7.1 Hamiltonian</h3>
+<p>The Hamiltonian for the hydrogen atom, neglecting relativistic effects and spin-orbit coupling, is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{e^2}{4\pi\epsilon_0 r}
+$$</p>
+<p>where:
+- $\mu = \frac{m_e m_p}{m_e + m_p}$ is the reduced mass of the electron-proton system,
+- $m_e$ is the mass of the electron,
+- $m_p$ is the mass of the proton,
+- $e$ is the elementary charge,
+- $\epsilon_0$ is the vacuum permittivity,
+- $r$ is the distance between the electron and the proton.</p>
+<h3 id="272-energy-eigenvalues_2">2.7.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the hydrogen atom are given by the Rydberg formula:</p>
+<p>$$
+E_n = -\frac{R_y}{n^2}, \quad n = 1, 2, 3, \ldots
+$$</p>
+<p>where:
+- $R_y = \frac{\mu e^4}{8\epsilon_0^2 h^2} \approx 13.6 \text{ eV}$ is the Rydberg constant,
+- $n$ is the principal quantum number.</p>
+<p>The negative sign indicates that the energy is bound, and $n=1$ corresponds to the ground state, with higher values of $n$ corresponding to excited states.</p>
+<h3 id="273-atomic-orbitals_2">2.7.3 Atomic Orbitals</h3>
+<p>The wave functions for the hydrogen atom are called atomic orbitals and are described by three quantum numbers:
+- Principal quantum number $n$: determines the energy level and can be any positive integer ($n = 1, 2, 3, \ldots$).
+- Angular momentum or azimuthal quantum number $l$: determines the shape of the orbital and can range from $0$ to $n-1$. ($l=0, 1, 2, \ldots, n-1$)
+- Magnetic quantum number $m_l$: determines the orientation of the orbital in space and can take integer values from $-l$ to $+l$. ($m_l = -l, -l+1, \ldots, 0, \ldots, l-1, l$)</p>
+<p>For example, for $n=1$, we have only $l=0$ and $m_l=0$, which corresponds to the 1s orbital. For $n=2$, we have $l=0$ (2s orbital) and $l=1$ (2p orbitals, with $m_l = -1, 0, 1$).</p>
+<p>The hydrogen atom solutions provide a crucial foundation for understanding the electronic structure of all atoms and molecules, and the concept of atomic orbitals is fundamental in chemistry.</p>
+<h2 id="28-spin-angular-momentum_2">2.8 Spin Angular Momentum</h2>
+<p>In addition to orbital angular momentum, particles like electrons possess an intrinsic angular momentum called spin angular momentum, or simply spin. Spin is a purely quantum mechanical property with no classical analogue.</p>
+<h3 id="281-spin-quantum-numbers_2">2.8.1 Spin Quantum Numbers</h3>
+<p>For electrons, spin angular momentum is quantized and described by two quantum numbers:
+- Spin quantum number $s = \frac{1}{2}$ (for electrons, always $\frac{1}{2}$).
+- Spin magnetic quantum number $m_s$: can take two values, $m_s = +\frac{1}{2}$ (spin up, $\uparrow$) and $m_s = -\frac{1}{2}$ (spin down, $\downarrow$).</p>
+<h3 id="282-spin-operators_2">2.8.2 Spin Operators</h3>
+<p>Spin is also associated with operators, analogous to orbital angular momentum operators. The spin operators $\hat{S}^2$, $\hat{S}_x$, $\hat{S}_y$, and $\hat{S}_z$ satisfy similar commutation relations as the orbital angular momentum operators.</p>
+<h3 id="283-total-angular-momentum_2">2.8.3 Total Angular Momentum</h3>
+<p>The total angular momentum $\hat{\mathbf{J}}$ of an electron in an atom is the sum of its orbital angular momentum $\hat{\mathbf{L}}$ and spin angular momentum $\hat{\mathbf{S}}$:</p>
+<p>$$
+\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}
+$$</p>
+<p>Total angular momentum is crucial for understanding atomic spectra and magnetic properties, especially in relativistic quantum mechanics where spin-orbit coupling becomes significant.</p>
+<h2 id="29-approximation-methods_2">2.9 Approximation Methods</h2>
+<p>For most quantum mechanical systems, especially those involving multiple particles, solving the Schrödinger equation analytically is impossible. Therefore, approximation methods are essential tools in quantum mechanics to obtain approximate solutions that are sufficiently accurate for practical purposes. We will briefly introduce two common approximation methods: perturbation theory and the variational method.</p>
+<h3 id="291-perturbation-theory_2">2.9.1 Perturbation Theory</h3>
+<p>Perturbation theory is used when the Hamiltonian of a system can be written as a sum of an unperturbed Hamiltonian $\hat{H}_0$ for which the solutions are known, and a small perturbation $\hat{H}'$:</p>
+<p>$$
+\hat{H} = \hat{H}_0 + \lambda\hat{H}'
+$$</p>
+<p>where $\lambda$ is a dimensionless parameter much smaller than 1. We can then expand the energy eigenvalues and eigenfunctions in powers of $\lambda$.</p>
+<p>To first order in perturbation theory, the energy correction is given by:</p>
+<p>$$
+E_n^{(1)} = \langle \psi_n^{(0)} | \hat{H}' | \psi_n^{(0)} \rangle
+$$</p>
+<p>and the first-order correction to the wave function is:</p>
+<p>$$
+| \psi_n^{(1)} \rangle = \sum_{k \neq n} \frac{\langle \psi_k^{(0)} | \hat{H}' | \psi_n^{(0)} \rangle}{E_n^{(0)} - E_k^{(0)}} | \psi_k^{(0)} \rangle
+$$</p>
+<p>where $E_n^{(0)}$ and $| \psi_n^{(0)} \rangle$ are the eigenvalues and eigenfunctions of the unperturbed Hamiltonian $\hat{H}_0$.</p>
+<h3 id="292-variational-method_2">2.9.2 Variational Method</h3>
+<p>The variational method is based on the variational principle, which states that for any trial wave function $\phi$, the expectation value of the Hamiltonian $\hat{H}$ is an upper bound to the true ground state energy $E_0$:</p>
+<p>$$
+\langle \phi | \hat{H} | \phi \rangle \geq E_0
+$$</p>
+<p>By minimizing the expectation value of the Hamiltonian with respect to the parameters in the trial wave function, we can obtain an approximation to the ground state energy and wave function.</p>
+<p>For example, if we choose a trial wave function $\phi(\alpha)$ that depends on a parameter $\alpha$, we can find the optimal $\alpha$ by minimizing the energy expectation value:</p>
+<p>$$
+\frac{d}{d\alpha} \langle \phi(\alpha) | \hat{H} | \phi(\alpha) \rangle = 0
+$$</p>
+<p>The variational method is particularly useful for finding approximate ground state energies and wave functions for complex systems.</p>
+<h2 id="210-time-dependent-quantum-mechanics_2">2.10 Time-Dependent Quantum Mechanics</h2>
+<p>So far, we have mainly discussed time-independent quantum mechanics and stationary states. However, many phenomena, such as spectroscopy and scattering, require a time-dependent treatment. Time-dependent quantum mechanics describes how quantum systems evolve in time under the influence of time-dependent potentials.</p>
+<h3 id="2101-time-dependent-schrodinger-equation_2">2.10.1 Time-Dependent Schrödinger Equation</h3>
+<p>As introduced earlier, the time-dependent Schrödinger equation is:</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>For a time-dependent Hamiltonian $\hat{H}(t)$, the solutions $\Psi(\mathbf{r}, t)$ describe the time evolution of the quantum system.</p>
+<h3 id="2102-time-evolution-operator_2">2.10.2 Time Evolution Operator</h3>
+<p>The time evolution of a quantum state can be formally described by the time evolution operator $\hat{U}(t, t_0)$, which propagates the state from time $t_0$ to time $t$:</p>
+<p>$$
+\Psi(t) = \hat{U}(t, t_0)\Psi(t_0)
+$$</p>
+<p>For a time-independent Hamiltonian, the time evolution operator is given by:</p>
+<p>$$
+\hat{U}(t, t_0) = e^{-i\hat{H}(t - t_0)/\hbar}
+$$</p>
+<p>For time-dependent Hamiltonians, the time evolution operator is more complex and often requires numerical methods or approximations to calculate.</p>
+<h3 id="2103-transitions-and-spectroscopy_2">2.10.3 Transitions and Spectroscopy</h3>
+<p>Time-dependent quantum mechanics is essential for understanding transitions between quantum states induced by time-dependent perturbations, such as electromagnetic radiation. This is the basis for spectroscopy, where the absorption and emission of photons by atoms and molecules are studied to probe their energy levels and structure.</p>
+<p>In summary, approximation methods and time-dependent quantum mechanics are crucial extensions of basic quantum mechanics that allow us to study more realistic and complex quantum systems and phenomena. These concepts will be further relevant when we discuss relativistic quantum chemistry and its applications.</p>
+<h2 id="211-summary_1">2.11 Summary</h2>
+<p>This chapter has provided a concise introduction to the fundamental principles of quantum mechanics. We began with wave-particle duality and the Schrödinger equation, which are central to describing quantum systems. We then explored quantum operators, expectation values, and Heisenberg's uncertainty principle, which highlight the probabilistic and non-classical nature of quantum mechanics. We also discussed important model systems like the quantum harmonic oscillator and the hydrogen atom, and concepts like spin angular momentum. Finally, we touched upon approximation methods and time-dependent quantum mechanics, which are essential for tackling more complex quantum problems.</p>
+<p>These concepts are essential for understanding the behavior of atoms and molecules, especially when relativistic effects become important. In the subsequent chapters, we will delve into relativistic quantum mechanics and its applications in chemistry, building upon the foundation laid in this chapter.</p>
+<h1 id="quantum-mechanics-primer_3">Quantum Mechanics Primer</h1>
+<p>This chapter will provide a primer on quantum mechanics, laying the groundwork for understanding relativistic quantum chemistry. We will cover the fundamental concepts necessary to grasp the quantum phenomena that are crucial in the later chapters.</p>
+<h2 id="21-wave-particle-duality_3">2.1 Wave-Particle Duality</h2>
+<p>One of the foundational concepts of quantum mechanics is wave-particle duality. This principle states that every quantum entity may be described as both a particle and a wave. </p>
+<h3 id="211-de-broglie-wavelength_3">2.1.1 de Broglie Wavelength</h3>
+<p>Louis de Broglie proposed that particles, like electrons, can exhibit wave-like properties, with a wavelength $\lambda$ related to their momentum $p$ by the de Broglie relation:</p>
+<p>$$
+\lambda = \frac{h}{p}
+$$</p>
+<p>where $h$ is Planck's constant. This equation implies that particles with larger momentum have shorter wavelengths, and vice versa.</p>
+<h3 id="212-experimental-evidence_3">2.1.2 Experimental Evidence</h3>
+<p>The wave nature of particles has been experimentally confirmed through phenomena like electron diffraction. In the double-slit experiment, electrons, when passed through two slits, create an interference pattern, which is characteristic of waves.</p>
+<h2 id="22-the-schrodinger-equation_3">2.2 The Schrödinger Equation</h2>
+<p>The time-dependent Schrödinger equation is the central equation in quantum mechanics that describes how the quantum state of a physical system changes in time.</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>where:
+- $i$ is the imaginary unit,
+- $\hbar = \frac{h}{2\pi}$ is the reduced Planck's constant,
+- $\Psi(\mathbf{r}, t)$ is the wave function, which describes the quantum state of the particle as a function of position $\mathbf{r}$ and time $t$,
+- $\hat{H}$ is the Hamiltonian operator, representing the total energy of the system.</p>
+<p>For a single particle in a potential $V(\mathbf{r}, t)$, the Hamiltonian is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}, t)
+$$</p>
+<p>where $m$ is the mass of the particle and $\nabla^2$ is the Laplacian operator.</p>
+<h3 id="221-time-independent-schrodinger-equation_3">2.2.1 Time-Independent Schrödinger Equation</h3>
+<p>For stationary states, where the potential energy is time-independent, we can separate variables and obtain the time-independent Schrödinger equation:</p>
+<p>$$
+\hat{H}\psi(\mathbf{r}) = E\psi(\mathbf{r})
+$$</p>
+<p>where:
+- $\psi(\mathbf{r})$ is the time-independent wave function,
+- $E$ is the energy eigenvalue of the stationary state.</p>
+<h2 id="23-quantum-operators_3">2.3 Quantum Operators</h2>
+<p>In quantum mechanics, physical observables are represented by linear operators acting on the wave function.</p>
+<h3 id="231-position-operator_3">2.3.1 Position Operator</h3>
+<p>The position operator $\hat{\mathbf{r}}$ simply multiplies the wave function by the position vector $\mathbf{r}$:</p>
+<p>$$
+\hat{\mathbf{r}}\psi(\mathbf{r}) = \mathbf{r}\psi(\mathbf{r})
+$$</p>
+<h3 id="232-momentum-operator_3">2.3.2 Momentum Operator</h3>
+<p>The momentum operator $\hat{\mathbf{p}}$ is represented in position space as:</p>
+<p>$$
+\hat{\mathbf{p}} = -i\hbar\nabla
+$$</p>
+<p>Applying the momentum operator to a wave function gives:</p>
+<p>$$
+\hat{\mathbf{p}}\psi(\mathbf{r}) = -i\hbar\nabla\psi(\mathbf{r})
+$$</p>
+<h3 id="233-energy-operator-hamiltonian_3">2.3.3 Energy Operator (Hamiltonian)</h3>
+<p>As introduced in the Schrödinger equation, the Hamiltonian operator $\hat{H}$ represents the total energy of the system.</p>
+<h3 id="234-angular-momentum-operator_3">2.3.4 Angular Momentum Operator</h3>
+<p>The angular momentum operator $\hat{\mathbf{L}}$ is defined as:</p>
+<p>$$
+\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}
+$$</p>
+<p>In Cartesian coordinates, the components are:</p>
+<p>$$
+\begin{aligned}
+\hat{L}_x &amp;= \hat{y}\hat{p}_z - \hat{z}\hat{p}_y \
+\hat{L}_y &amp;= \hat{z}\hat{p}_x - \hat{x}\hat{p}_z \
+\hat{L}_z &amp;= \hat{x}\hat{p}_y - \hat{y}\hat{p}_x
+\end{aligned}
+$$</p>
+<h2 id="24-expectation-values_3">2.4 Expectation Values</h2>
+<p>The expectation value of a physical observable $A$, represented by the operator $\hat{A}$, for a system in a state described by the normalized wave function $\Psi$, is given by:</p>
+<p>$$
+\langle A \rangle = \langle \Psi | \hat{A} | \Psi \rangle = \int \Psi^*(\mathbf{r}, t) \hat{A} \Psi(\mathbf{r}, t) d^3r
+$$</p>
+<p>For example, the expectation value of the position $\langle \mathbf{r} \rangle$ and momentum $\langle \mathbf{p} \rangle$ can be calculated using their respective operators.</p>
+<h2 id="25-heisenbergs-uncertainty-principle_3">2.5 Heisenberg's Uncertainty Principle</h2>
+<p>Heisenberg's uncertainty principle states that there is a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, can be known simultaneously. For position and momentum, this principle is expressed as:</p>
+<p>$$
+\Delta x \Delta p_x \geq \frac{\hbar}{2}
+$$</p>
+<p>where $\Delta x$ and $\Delta p_x$ are the standard deviations of position and momentum in the x-direction, respectively. This principle is not due to limitations in measurement instruments but is inherent in the quantum nature of particles.</p>
+<p>This primer provides a basic overview of quantum mechanics. In the following sections and chapters, we will build upon these fundamental concepts to explore more advanced topics in relativistic quantum chemistry.</p>
+<h2 id="26-quantum-harmonic-oscillator_3">2.6 Quantum Harmonic Oscillator</h2>
+<p>The quantum harmonic oscillator is a fundamental model in quantum mechanics that describes systems experiencing a restoring force proportional to their displacement from equilibrium. It is used to model molecular vibrations, lattice vibrations in solids, and many other physical systems.</p>
+<h3 id="261-hamiltonian_3">2.6.1 Hamiltonian</h3>
+<p>The Hamiltonian for a one-dimensional quantum harmonic oscillator is given by:</p>
+<p>$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2
+$$</p>
+<p>where:
+- $\hat{p}$ is the momentum operator,
+- $m$ is the mass of the particle,
+- $\omega$ is the angular frequency of the oscillator,
+- $\hat{x}$ is the position operator.</p>
+<h3 id="262-energy-eigenvalues_3">2.6.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the quantum harmonic oscillator are quantized and given by:</p>
+<p>$$
+E_n = \hbar\omega\left(n + \frac{1}{2}\right), \quad n = 0, 1, 2, \ldots
+$$</p>
+<p>where $n$ is the quantum number. The lowest energy level, $E_0 = \frac{1}{2}\hbar\omega$, is known as the zero-point energy, which is a purely quantum mechanical phenomenon.</p>
+<h3 id="263-wave-functions_3">2.6.3 Wave Functions</h3>
+<p>The wave functions for the harmonic oscillator can be expressed in terms of Hermite polynomials. The ground state wave function ($n=0$) is a Gaussian function:</p>
+<p>$$
+\psi_0(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}}
+$$</p>
+<p>and higher energy wave functions are given by:</p>
+<p>$$
+\psi_n(x) = \frac{1}{\sqrt{2^n n!}} \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+$$</p>
+<p>where $H_n(x)$ are the Hermite polynomials.</p>
+<p>The quantum harmonic oscillator illustrates key quantum mechanical concepts such as energy quantization and zero-point energy, and it serves as a crucial building block for understanding more complex quantum systems.</p>
+<h2 id="27-hydrogen-atom_3">2.7 Hydrogen Atom</h2>
+<p>The hydrogen atom, consisting of a single proton and a single electron, is the simplest atom and one of the most important systems in quantum mechanics. It is the only atom for which the Schrödinger equation can be solved analytically, providing a foundation for understanding more complex atoms and molecules.</p>
+<h3 id="271-hamiltonian_3">2.7.1 Hamiltonian</h3>
+<p>The Hamiltonian for the hydrogen atom, neglecting relativistic effects and spin-orbit coupling, is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{e^2}{4\pi\epsilon_0 r}
+$$</p>
+<p>where:
+- $\mu = \frac{m_e m_p}{m_e + m_p}$ is the reduced mass of the electron-proton system,
+- $m_e$ is the mass of the electron,
+- $m_p$ is the mass of the proton,
+- $e$ is the elementary charge,
+- $\epsilon_0$ is the vacuum permittivity,
+- $r$ is the distance between the electron and the proton.</p>
+<h3 id="272-energy-eigenvalues_3">2.7.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the hydrogen atom are given by the Rydberg formula:</p>
+<p>$$
+E_n = -\frac{R_y}{n^2}, \quad n = 1, 2, 3, \ldots
+$$</p>
+<p>where:
+- $R_y = \frac{\mu e^4}{8\epsilon_0^2 h^2} \approx 13.6 \text{ eV}$ is the Rydberg constant,
+- $n$ is the principal quantum number.</p>
+<p>The negative sign indicates that the energy is bound, and $n=1$ corresponds to the ground state, with higher values of $n$ corresponding to excited states.</p>
+<h3 id="273-atomic-orbitals_3">2.7.3 Atomic Orbitals</h3>
+<p>The wave functions for the hydrogen atom are called atomic orbitals and are described by three quantum numbers:
+- Principal quantum number $n$: determines the energy level and can be any positive integer ($n = 1, 2, 3, \ldots$).
+- Angular momentum or azimuthal quantum number $l$: determines the shape of the orbital and can range from $0$ to $n-1$. ($l=0, 1, 2, \ldots, n-1$)
+- Magnetic quantum number $m_l$: determines the orientation of the orbital in space and can take integer values from $-l$ to $+l$. ($m_l = -l, -l+1, \ldots, 0, \ldots, l-1, l$)</p>
+<p>For example, for $n=1$, we have only $l=0$ and $m_l=0$, which corresponds to the 1s orbital. For $n=2$, we have $l=0$ (2s orbital) and $l=1$ (2p orbitals, with $m_l = -1, 0, 1$).</p>
+<p>The hydrogen atom solutions provide a crucial foundation for understanding the electronic structure of all atoms and molecules, and the concept of atomic orbitals is fundamental in chemistry.</p>
+<h2 id="28-spin-angular-momentum_3">2.8 Spin Angular Momentum</h2>
+<p>In addition to orbital angular momentum, particles like electrons possess an intrinsic angular momentum called spin angular momentum, or simply spin. Spin is a purely quantum mechanical property with no classical analogue.</p>
+<h3 id="281-spin-quantum-numbers_3">2.8.1 Spin Quantum Numbers</h3>
+<p>For electrons, spin angular momentum is quantized and described by two quantum numbers:
+- Spin quantum number $s = \frac{1}{2}$ (for electrons, always $\frac{1}{2}$).
+- Spin magnetic quantum number $m_s$: can take two values, $m_s = +\frac{1}{2}$ (spin up, $\uparrow$) and $m_s = -\frac{1}{2}$ (spin down, $\downarrow$).</p>
+<h3 id="282-spin-operators_3">2.8.2 Spin Operators</h3>
+<p>Spin is also associated with operators, analogous to orbital angular momentum operators. The spin operators $\hat{S}^2$, $\hat{S}_x$, $\hat{S}_y$, and $\hat{S}_z$ satisfy similar commutation relations as the orbital angular momentum operators.</p>
+<h3 id="283-total-angular-momentum_3">2.8.3 Total Angular Momentum</h3>
+<p>The total angular momentum $\hat{\mathbf{J}}$ of an electron in an atom is the sum of its orbital angular momentum $\hat{\mathbf{L}}$ and spin angular momentum $\hat{\mathbf{S}}$:</p>
+<p>$$
+\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}
+$$</p>
+<p>Total angular momentum is crucial for understanding atomic spectra and magnetic properties, especially in relativistic quantum mechanics where spin-orbit coupling becomes significant.</p>
+<h2 id="29-approximation-methods_3">2.9 Approximation Methods</h2>
+<p>For most quantum mechanical systems, especially those involving multiple particles, solving the Schrödinger equation analytically is impossible. Therefore, approximation methods are essential tools in quantum mechanics to obtain approximate solutions that</p>
+<p>One of the foundational concepts of quantum mechanics is wave-particle duality. This principle states that every quantum entity may be described as both a particle and a wave. </p>
+<h3 id="211-de-broglie-wavelength_4">2.1.1 de Broglie Wavelength</h3>
+<p>Louis de Broglie proposed that particles, like electrons, can exhibit wave-like properties, with a wavelength $\lambda$ related to their momentum $p$ by the de Broglie relation:</p>
+<p>$$
+\lambda = \frac{h}{p}
+$$</p>
+<p>where $h$ is Planck's constant. This equation implies that particles with larger momentum have shorter wavelengths, and vice versa.</p>
+<h3 id="212-experimental-evidence_4">2.1.2 Experimental Evidence</h3>
+<p>The wave nature of particles has been experimentally confirmed through phenomena like electron diffraction. In the double-slit experiment, electrons, when passed through two slits, create an interference pattern, which is characteristic of waves.</p>
+<h2 id="22-the-schrodinger-equation_4">2.2 The Schrödinger Equation</h2>
+<p>The time-dependent Schrödinger equation is the central equation in quantum mechanics that describes how the quantum state of a physical system changes in time.</p>
+<p>$$
+i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r}, t) = \hat{H}\Psi(\mathbf{r}, t)
+$$</p>
+<p>where:
+- $i$ is the imaginary unit,
+- $\hbar = \frac{h}{2\pi}$ is the reduced Planck's constant,
+- $\Psi(\mathbf{r}, t)$ is the wave function, which describes the quantum state of the particle as a function of position $\mathbf{r}$ and time $t$,
+- $\hat{H}$ is the Hamiltonian operator, representing the total energy of the system.</p>
+<p>For a single particle in a potential $V(\mathbf{r}, t)$, the Hamiltonian is given by:</p>
+<p>$$
+\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}, t)
+$$</p>
+<p>where $m$ is the mass of the particle and $\nabla^2$ is the Laplacian operator.</p>
+<h3 id="221-time-independent-schrodinger-equation_4">2.2.1 Time-Independent Schrödinger Equation</h3>
+<p>For stationary states, where the potential energy is time-independent, we can separate variables and obtain the time-independent Schrödinger equation:</p>
+<p>$$
+\hat{H}\psi(\mathbf{r}) = E\psi(\mathbf{r})
+$$</p>
+<p>where:
+- $\psi(\mathbf{r})$ is the time-independent wave function,
+- $E$ is the energy eigenvalue of the stationary state.</p>
+<h2 id="23-quantum-operators_4">2.3 Quantum Operators</h2>
+<p>In quantum mechanics, physical observables are represented by linear operators acting on the wave function.</p>
+<h3 id="231-position-operator_4">2.3.1 Position Operator</h3>
+<p>The position operator $\hat{\mathbf{r}}$ simply multiplies the wave function by the position vector $\mathbf{r}$:</p>
+<p>$$
+\hat{\mathbf{r}}\psi(\mathbf{r}) = \mathbf{r}\psi(\mathbf{r})
+$$</p>
+<h3 id="232-momentum-operator_4">2.3.2 Momentum Operator</h3>
+<p>The momentum operator $\hat{\mathbf{p}}$ is represented in position space as:</p>
+<p>$$
+\hat{\mathbf{p}} = -i\hbar\nabla
+$$</p>
+<p>Applying the momentum operator to a wave function gives:</p>
+<p>$$
+\hat{\mathbf{p}}\psi(\mathbf{r}) = -i\hbar\nabla\psi(\mathbf{r})
+$$</p>
+<h3 id="233-energy-operator-hamiltonian_4">2.3.3 Energy Operator (Hamiltonian)</h3>
+<p>As introduced in the Schrödinger equation, the Hamiltonian operator $\hat{H}$ represents the total energy of the system.</p>
+<h3 id="234-angular-momentum-operator_4">2.3.4 Angular Momentum Operator</h3>
+<p>The angular momentum operator $\hat{\mathbf{L}}$ is defined as:</p>
+<p>$$
+\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}
+$$</p>
+<p>In Cartesian coordinates, the components are:</p>
+<p>$$
+\begin{aligned}
+\hat{L}_x &amp;= \hat{y}\hat{p}_z - \hat{z}\hat{p}_y \
+\hat{L}_y &amp;= \hat{z}\hat{p}_x - \hat{x}\hat{p}_z \
+\hat{L}_z &amp;= \hat{x}\hat{p}_y - \hat{y}\hat{p}_x
+\end{aligned}
+$$</p>
+<h2 id="24-expectation-values_4">2.4 Expectation Values</h2>
+<p>The expectation value of a physical observable $A$, represented by the operator $\hat{A}$, for a system in a state described by the normalized wave function $\Psi$, is given by:</p>
+<p>$$
+\langle A \rangle = \langle \Psi | \hat{A} | \Psi \rangle = \int \Psi^*(\mathbf{r}, t) \hat{A} \Psi(\mathbf{r}, t) d^3r
+$$</p>
+<p>For example, the expectation value of the position $\langle \mathbf{r} \rangle$ and momentum $\langle \mathbf{p} \rangle$ can be calculated using their respective operators.</p>
+<h2 id="25-heisenbergs-uncertainty-principle_4">2.5 Heisenberg's Uncertainty Principle</h2>
+<p>Heisenberg's uncertainty principle states that there is a fundamental limit to the precision with which certain pairs of physical properties of a particle, known as complementary variables, can be known simultaneously. For position and momentum, this principle is expressed as:</p>
+<p>$$
+\Delta x \Delta p_x \geq \frac{\hbar}{2}
+$$</p>
+<p>where $\Delta x$ and $\Delta p_x$ are the standard deviations of position and momentum in the x-direction, respectively. This principle is not due to limitations in measurement instruments but is inherent in the quantum nature of particles.</p>
+<p>This primer provides a basic overview of quantum mechanics. In the following sections and chapters, we will build upon these fundamental concepts to explore more advanced topics in relativistic quantum chemistry.</p>
+<h2 id="26-quantum-harmonic-oscillator_4">2.6 Quantum Harmonic Oscillator</h2>
+<p>The quantum harmonic oscillator is a fundamental model in quantum mechanics that describes systems experiencing a restoring force proportional to their displacement from equilibrium. It is used to model molecular vibrations, lattice vibrations in solids, and many other physical systems.</p>
+<h3 id="261-hamiltonian_4">2.6.1 Hamiltonian</h3>
+<p>The Hamiltonian for a one-dimensional quantum harmonic oscillator is given by:</p>
+<p>$$
+\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2
+$$</p>
+<p>where:
+- $\hat{p}$ is the momentum operator,
+- $m$ is the mass of the particle,
+- $\omega$ is the angular frequency of the oscillator,
+- $\hat{x}$ is the position operator.</p>
+<h3 id="262-energy-eigenvalues_4">2.6.2 Energy Eigenvalues</h3>
+<p>The energy eigenvalues for the quantum harmonic oscillator are quantized and given by:</p>
+<p>$$
+E_n = \hbar\omega\left(n + \frac{1}{2}\right), \quad n = 0, 1, 2, \ldots
+$$</p>
+<p>where $n$ is the quantum number. The lowest energy level, $E_0 = \frac{1}{2}\hbar\omega$, is known as the zero-point energy, which is a purely quantum mechanical phenomenon.</p>
+<h3 id="263-wave-functions_4">2.6.3 Wave Functions</h3>
+<p>The wave functions for the harmonic oscillator can be expressed in terms of Hermite polynomials. The ground state wave function ($n=0$) is a Gaussian function:</p>
+<p>$$
+\psi_0(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}}
+$$</p>
+<p>and higher energy wave functions are given by:</p>
+<p>$$
+\psi_n(x) = \frac{1}{\sqrt{2^n n!}} \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} e^{-\frac{m\omega x^2}{2\hbar}} H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+$$</p>
+<p>where $H_n(x)$ are the Hermite polynomials.</p>
+<p>The quantum harmonic oscillator illustrates key quantum mechanical concepts such as energy quantization and zero-point energy, and it serves as a crucial building block for understanding more complex quantum systems.</p>
+<h2 id="exercises">Exercises</h2>
+<p><a href="exercises/ch02_exercises.html">Exercises(.md)</a>
+<a href="exercises/ch02_exercises.ipynb">Exercises(.ipynb)</a></p>
+<h2 id="references">References</h2>
+<p><a href="references/reference_list.html">References</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="01_Basics_of_Relativity.html" class="btn btn-neutral float-left" title="Basics of Relativity"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="03_Particle_Physics_and_Atomic_Structure.html" class="btn btn-neutral float-right" title="Particle Physics and Atomic Structure">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="01_Basics_of_Relativity.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="03_Particle_Physics_and_Atomic_Structure.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
